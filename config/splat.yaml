@@ -1,0 +1,43 @@
+# splat config para AirBlade (SCES-50246).
+# Trocea el ELF en segmentos de asm/data para decompilación progresiva.
+# NOTA: borde de secciones (code/rodata/data/bss) aún por afinar con un primer pase;
+# los offsets de abajo son el punto de partida basado en los program headers del ELF.
+name: airblade
+sha1: 1e8e5acc5e96d9123696e887c90189fd29fe6309
+
+options:
+  basename: airblade
+  target_path: config/SCES_502.46
+  base_path: ..
+  platform: ps2
+  # El binario real es Metrowerks CodeWarrior 2.4.1.01; splat no lo modela como
+  # perfil propio, así que arrancamos en modo genérico y el matching se valida
+  # fuera de splat (asm-differ + objeto recompilado con el CW real).
+  compiler: GCC
+  endianness: little
+  section_order: [".text", ".rodata", ".data", ".bss"]
+  symbol_addrs_path: config/symbol_addrs.txt
+  undefined_funcs_auto_path: config/undefined_funcs_auto.txt
+  undefined_syms_auto_path: config/undefined_syms_auto.txt
+  asm_path: asm
+  src_path: src
+  data_path: data
+  ld_script_path: config/airblade.ld
+  find_file_boundaries: true
+  use_legacy_include_asm: false
+
+# Carga en 0x00100000; el segmento LOAD mide 0x2360C0 (2 318 976 bytes).
+# El .bss arranca en 0x00336280 (segundo program header, filesz 0).
+segments:
+  - name: main
+    type: code
+    start: 0x0
+    vram: 0x00100000
+    subalign: 8
+    subsegments:
+      # Punto de partida: todo como .text hasta tener un mapa fino.
+      # Cada función decompilada se pasará de 'asm' a 'c' aquí.
+      - [0x0, asm, main_text]
+
+  - [0x2360C0, bss, main_bss]  # .bss en vram 0x00336280
+  - [0x2360C0]                 # end marker

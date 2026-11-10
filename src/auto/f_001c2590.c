@@ -1,0 +1,2 @@
+/* AirBlade f_001c2590 @ 0x001c2590  [getter]  esperado: 08 00 e0 03 04 00 82 8c */
+int f_001c2590(int p){ return *(int *)(p + 0x4); }

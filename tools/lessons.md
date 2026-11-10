@@ -1,0 +1,40 @@
+Reglas aprendidas con este compilador (mwccps2, -O4,p):
+- Acceso `lw/sw reg, off($gp)`: son globales pequeñas (extern int, struct pequeño). Se declaran `extern` normales; NO uses atributos ni punteros literales.
+- Acceso `lui reg, 0x1000..` + `lw`: global grande o array; también `extern`.
+- Varios accesos a campos del mismo global comparten un solo `lui`: declara UN struct extern y usa sus campos, no varios globales sueltos.
+- Acceso a tabla `lw v0, off(base + idx*N)`: `extern s32 tbl[][N]; return tbl[i][j];`.
+- Función que solo llama a otra con un global: `sub(a, str); return 1;` con `extern char str[];`.
+- Float: `f32 t = s * a[0]; b[0] = b[0] + t;` mantiene el orden mul/add del original.
+- Si el original guarda `$ra` con `sq` y usa `s0`, hay una variable viva a través de una llamada.
+- `movn` para "puntero si no nulo, si no &tmp": mwccps2 emite `beqz`; no se reproduce con ternario. No insistas.
+- Original con `lui rX,0x2f..` + `addiu rX,rX,off` y luego `lw/sw` con offsets (base compartida): declara `extern char base[];` y usa `struct S *p = (struct S*)base; p->campo`. Así las cargas y stores coinciden. Con `extern struct S g;` sale `lui at` en cada acceso (más instrucciones).
+- Si solo falla `lui v0` + `addiu v1,v0` frente a `lui v1` + `addiu v1,v1`, es asignación de registros del compilador: prueba orden de sentencias/variables temporales; si no sale, déjalo (no hay forma conocida).
+- Copias `lq`/`sq` (128 bits): `typedef unsigned __int128 Q;` y copia con ese tipo (`*(Q*)dst = *(Q*)src`).
+- Global enorme accedido en un campo lejano: `extern struct G { char pad[0x6b8]; s32 v; } g;` y usa `g.v`.
+- Varios arrays o globales indexados por la misma `i`: `extern s32 a[]; extern s32 b[];` y `a[i]`, `b[i]` (arrays externos separados).
+- Tabla de punteros a función que se rellena: asignaciones sueltas `tbl[0] = f0; tbl[1] = f1;`.
+- Un `if/else` simple suele salir mejor que `goto`; nunca uses `goto`.
+- `(s32)` de un float llama a un helper con este compilador; si el original lo hace en línea (`trunc.w.s`), prueba el compilador 3.0.3 (`--comp comp-3.0.3-020716`).
+- Original con `movz`/`movn`, o tail call `j` en una sola rama: mwccps2 no lo genera; no insistas.
+- Direcciones del tipo `base + índice`: `extern char sym[]; extern s32 off;` y `*(s32*)((s32)sym + off + 16)` (con el cast a s32; sin él el orden de carga sale mal).
+- Si el orden de varios stores no sale, declara los globales `volatile` sueltos.
+- Tabla de punteros a función leída: llama con un cast, sin variable local intermedia.
+- Cabeceras de lista o puntero global: `p = g` DESPUÉS de asignar el global suele fijar el orden.
+- Struct con subarray: `struct E {s32 p0,p1,a,p3[8],b,c;}; extern struct E tbl[];` y pasa `&tbl[i].b`.
+- Bitfields `lo:12, mid:11` cuando hay `andi`/`srl` con máscaras raras.
+- Funciones compiladas sin optimizar (`b` a la siguiente instrucción, `nop`, `move a1,a0` al entrar) probablemente son de otra unidad: no las intentes con -O4.
+- Función grande con muchos arrays locales de floats: anida bloques `{}` (declara e inicializa `a` y `b`, calcula lo que depende de ellos y declara el resto de arrays en bloques internos). Sin eso el scheduler mueve el cálculo de floats al final.
+- Si al llamar a una función los argumentos salen intercambiados (`a0`/`a1`), el prototipo es el problema: declara `void sub(s32, void*)` en vez de pasar un `struct*`.
+- Si la función devuelve el resultado de otra y es `f32`, declara el tipo de retorno `f32` (`return sub(p);`).
+
+## Reglas aprendidas por agentes (tanda getters)
+- Función que solo devuelve la dirección de un global (`lui`+`addiu`): `extern char g[]; void* f(){return g;}`.
+- Si el original devuelve el valor copiado (`lw v0,8(a0); sw v0,12(a0)`), la función debe devolver `int`: `return p[3]=p[2];`. Con `void` el compilador usa v1 en vez de v0.
+- Si el `lw` está a mayor offset que el campo accedido, el struct necesita relleno para reproducir el offset original (p. ej. `struct B{int a;int x;int b;}` para offset 8).
+- `lui`+`addiu base` seguido de `lwc1 24(base)`: `struct S{char pad[24]; float f;}; extern char base[]; struct S*p=(struct S*)base; return p->f;` (con `extern float g[]` sale `lui at` y 3 instrucciones).
+- Sin solución aún: `lui v1,X; lw v0,-N(v1)` (offset negativo con `lui` solo); getters donde el original usa v1 donde sale v0.
+- Función void que acaba con stores sobre un puntero local y cuyo original deja el puntero en v0: declararla con retorno del puntero (`struct B *f(...){ p=a->b; p->b=0; p->a=0; return p; }`). El `sd` del long long va antes que el `sw` del int.
+- Getters encadenados `a->b->campo`: structs anidados con `char pad[]`. Si el original usa v1 como intermedio (0x1080d8, 0x1080c8) no se reproduce.
+- Sin solución: `movz` (0x2561d0, 0x2555c8), int en a0 devuelto como float vía `mtc1` (0x11a200), guardar $gp en un global (0x1df970).
+- Test `g==1` con `lw` desde $gp, `xori` y `sltiu`: `return g == 1;` (con `(g^1)==0` o `!(g^1)` salen instrucciones de más).
+- Intercambio de un global con offset negativo desde `lui` (0x101cd0): sale 1 instrucción más; el compilador no reutiliza el `lui` base. Sin solución.

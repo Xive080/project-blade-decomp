@@ -1,0 +1,45 @@
+# Nunca versionar datos del juego ni el ELF original (derechos de terceros)
+config/SCES_502.46
+*.iso
+*.ISO
+*.elf
+*.ELF
+extracted/
+
+# Artefactos de build
+build/
+*.o
+*.obj
+*.a
+*.elf.map
+config/undefined_funcs_auto.txt
+config/undefined_syms_auto.txt
+config/airblade.ld
+
+# Herramientas / entornos
+.venv/
+__pycache__/
+*.pyc
+
+# Submódulo (se clona aparte)
+extern/librw/
+
+# Compiladores y binarios de terceros (Metrowerks, wibo): nunca versionar
+compilers/
+wibo*
+mwcc*
+*.exe
+*.dll
+# Resultados y datos de trabajo locales
+decomp-work/
+batch_*/
+auto/
+
+# Toolchain local de matching (wibo, mwccps2, venv) y salidas
+toolchain/
+build/
+SCES_502.46
+
+# Datos del juego y herramientas de terceros: no versionar
+SYSTEM.CNF
+third_party/

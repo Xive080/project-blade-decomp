@@ -1,0 +1,40 @@
+struct T { void *f[10]; };
+struct B { struct T *t; s32 n; s32 pad[12]; s32 z; };
+extern struct T tmpl;
+extern struct T A;
+extern struct T C;
+extern struct B B1;
+extern struct B B2;
+extern void fA(void);
+extern void fB(void);
+extern void fC(void);
+extern void fD(void);
+extern void fE(void);
+extern void fF(void);
+extern void fG(void);
+extern void sub(s32, void *);
+
+void func(void) {
+    A = tmpl;
+    A.f[0] = fA;
+    A.f[2] = fB;
+    A.f[7] = fC;
+    A.f[9] = fF;
+    A.f[1] = fD;
+    A.f[8] = fE;
+    B1.t = &A;
+    B1.n = 5;
+    B1.z = 0;
+    sub(9, &B1);
+    C = tmpl;
+    C.f[0] = fA;
+    C.f[2] = fB;
+    C.f[7] = fC;
+    C.f[9] = fG;
+    C.f[1] = fD;
+    C.f[8] = fE;
+    B2.t = &C;
+    B2.n = 5;
+    B2.z = 1;
+    sub(12, &B2);
+}

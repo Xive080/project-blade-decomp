@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AirBlade Decomp</title>
+<style>
+  :root { --bg:#f6f7f5; --panel:#fff; --fg:#1b1f1d; --muted:#5d6661; --line:#dde2de; --ok:#1d7a4d; --bad:#b3402f; --acc:#245f8f; --mute-bar:#c9d0cb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121513; --panel:#1b1f1d; --fg:#e8ece9; --muted:#9aa49e; --line:#2c332f; --ok:#58c08c; --bad:#e0806f; --acc:#6aa8d8; --mute-bar:#39413c; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.45 system-ui, sans-serif; padding: 20px max(16px, env(safe-area-inset-left)); }
+  main { max-width: 62rem; margin: 0 auto; display:flex; flex-direction:column; gap:14px; }
+  h1 { font: 400 1.7rem Georgia, serif; margin:0; } h2 { font-size:1rem; margin:0 0 8px; font-weight:600; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:14px 16px; min-width:0; }
+  .tiles { display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:10px; }
+  .tile span { display:block; color:var(--muted); font-size:12px; } .tile b { font: 400 1.8rem Georgia, serif; font-variant-numeric: tabular-nums; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  button { font:inherit; padding:8px 14px; border-radius:6px; border:1px solid var(--line); background:var(--panel); color:var(--fg); cursor:pointer; }
+  button.primary { background:var(--acc); border-color:var(--acc); color:#fff; } button.danger { color:var(--bad); }
+  button:disabled { opacity:.5; cursor:default; } button:focus-visible { outline:2px solid var(--acc); outline-offset:2px; }
+  label { color:var(--muted); font-size:12px; } input { font:inherit; width:5.5rem; padding:6px 8px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--fg); }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; background:var(--muted); } .dot.on { background:var(--ok); } .dot.off { background:var(--bad); }
+  .bar { display:flex; height:18px; border-radius:4px; overflow:hidden; background:var(--mute-bar); } .bar i { background:var(--ok); display:block; }
+  .bk { display:grid; grid-template-columns:4.5rem 1fr 4rem; gap:10px; align-items:center; margin:6px 0; font-variant-numeric:tabular-nums; } .bk em { color:var(--muted); font-style:normal; text-align:right; }
+  .scroll { max-height:20rem; overflow:auto; } table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th { position:sticky; top:0; background:var(--panel); text-align:left; color:var(--muted); font-weight:600; padding:6px 8px; border-bottom:1px solid var(--line); } td { padding:5px 8px; border-bottom:1px solid var(--line); }
+  .ok { color:var(--ok); } .no { color:var(--muted); } .msg { color:var(--muted); font-size:13px; min-height:1.3em; } ul { margin:0; padding-left:1.1rem; } li { margin:4px 0; }
+</style></head><body><main>
+<h1>AirBlade Decomp</h1>
+<p class="msg" id="head">Cargando…</p>
+<div class="tiles" id="tiles"></div>
+
+<section class="card"><h2>Actualizar a mano</h2>
+  <div class="row">
+    <button class="primary" id="b-refresh">Actualizar datos ahora</button>
+    <label for="n">Funciones</label><input id="n" type="number" min="1" max="500" value="50">
+    <label for="t">Intentos</label><input id="t" type="number" min="1" max="10" value="6">
+    <button id="b-match">Lanzar matching</button>
+    <button class="danger" id="b-stop">Parar matching</button>
+  </div>
+  <p class="msg" id="out"></p>
+  <p class="msg"><span class="dot" id="d-match"></span><span id="s-match"></span> · <span class="dot" id="d-llm"></span><span id="s-llm"></span></p>
+</section>
+
+<section class="card"><h2>Aciertos por tamaño de función</h2><div id="buckets"></div></section>
+
+<section class="card"><h2>Funciones intentadas</h2><div class="scroll"><table>
+  <thead><tr><th>Dirección</th><th>Instrucciones</th><th>Resultado</th><th>Intentos</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+
+<section class="card"><h2>Cómo se actualiza</h2><ul>
+  <li>Este panel reexporta las cifras solo, cada 60 s, mientras el servidor esté en marcha.</li>
+  <li>«Actualizar datos ahora» fuerza esa exportación al momento.</li>
+  <li>«Lanzar matching» ejecuta el driver con el modelo local de Titán. Continúa por la siguiente función sin repetir las ya hechas.</li>
+</ul></section>
+</main>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const post = (url, body) => fetch(url, {method:'POST', headers:{'X-Panel':'1','Content-Type':'application/json'}, body: JSON.stringify(body||{})}).then((r) => r.json());
+  const val = (s, m) => (s.find((r) => r.metric === m) || {}).value ?? 0;
+  const el = (tag, text, cls) => { const e = document.createElement(tag); e.textContent = text; if (cls) e.className = cls; return e; };
+  function render(s) {
+    const att = val(s.summary, 'Funciones intentadas'), hit = val(s.summary, 'Byte-match');
+    $('head').textContent = `${hit} de ${att} funciones con byte-match (${att ? (100*hit/att).toFixed(1) : '0.0'} %). Datos de ${s.export.at || '—'}.`;
+    const t = $('tiles'); t.replaceChildren();
+    [['Byte-match', hit], ['Intentadas', att], ['Candidatas 5–40 instr.', val(s.summary, 'Funciones candidatas (3-40 instr)')], ['Triviales verificadas', val(s.summary, 'Triviales verificadas (auto-matcher)')], ['Ejemplos en biblioteca', val(s.summary, 'Ejemplos en biblioteca')]]
+      .forEach(([k, v]) => { const d = el('div', '', 'card tile'); d.append(el('span', k), el('b', Number(v).toLocaleString('es'))); t.append(d); });
+    $('d-match').className = 'dot ' + (s.matching ? 'on' : ''); $('s-match').textContent = s.matching ? 'Matching en marcha' : 'Matching parado';
+    $('d-llm').className = 'dot ' + (s.llm ? 'on' : 'off'); $('s-llm').textContent = s.llm ? 'Modelo de Titán disponible' : 'Modelo de Titán no responde';
+    $('b-match').disabled = s.matching || !s.llm;
+    const b = $('buckets'); b.replaceChildren();
+    [['5', 5, 5], ['6–10', 6, 10], ['11–20', 11, 20], ['21–40', 21, 40]].forEach(([name, lo, hi]) => {
+      const rs = s.funcs.filter((f) => f.instr >= lo && f.instr <= hi), k = rs.filter((f) => f.match).length;
+      const row = el('div', '', 'bk'), bar = el('div', '', 'bar'), fill = el('i', ''); fill.style.width = rs.length ? (100*k/rs.length) + '%' : '0';
+      bar.append(fill); row.append(el('span', name), bar, el('em', `${k}/${rs.length}`)); b.append(row);
+    });
+    const tb = $('rows'); tb.replaceChildren();
+    s.funcs.forEach((f) => { const tr = document.createElement('tr'); tr.append(el('td', f.addr), el('td', f.instr), el('td', f.match ? 'Byte-match' : 'Sin match', f.match ? 'ok' : 'no'), el('td', f.tries)); tb.append(tr); });
+  }
+  const load = () => fetch('/api/state').then((r) => r.json()).then(render).catch(() => { $('head').textContent = 'Sin conexión con el servidor.'; });
+  const act = (btn, fn) => btn.addEventListener('click', async () => { btn.disabled = true; try { $('out').textContent = await fn(); } catch (e) { $('out').textContent = 'Error: ' + e; } await load(); });
+  act($('b-refresh'), async () => { const r = await post('/api/refresh'); return r.export.ok ? 'Datos actualizados: ' + r.export.msg : 'Falló la exportación: ' + r.export.msg; });
+  act($('b-match'), async () => (await post('/api/match', {n: +$('n').value, tries: +$('t').value})).msg);
+  act($('b-stop'), async () => (await post('/api/stop')).msg);
+  load(); setInterval(load, 10000);
+</script></body></html>

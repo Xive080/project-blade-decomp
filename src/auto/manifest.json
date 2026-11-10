@@ -1,0 +1,184 @@
+[
+ {
+  "name": "f_001429c0",
+  "vaddr": 1321408,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 a4 00 82 8c",
+  "cfile": "auto/f_001429c0.c"
+ },
+ {
+  "name": "f_001429d0",
+  "vaddr": 1321424,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 a0 00 82 8c",
+  "cfile": "auto/f_001429d0.c"
+ },
+ {
+  "name": "f_00162cf0",
+  "vaddr": 1453296,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 68 00 82 8c",
+  "cfile": "auto/f_00162cf0.c"
+ },
+ {
+  "name": "f_0018e490",
+  "vaddr": 1631376,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 18 04 82 8c",
+  "cfile": "auto/f_0018e490.c"
+ },
+ {
+  "name": "f_001be630",
+  "vaddr": 1828400,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 00 00 82 8c",
+  "cfile": "auto/f_001be630.c"
+ },
+ {
+  "name": "f_001bea90",
+  "vaddr": 1829520,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 04 00 82 8c",
+  "cfile": "auto/f_001bea90.c"
+ },
+ {
+  "name": "f_001c2220",
+  "vaddr": 1843744,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 60 00 82 8c",
+  "cfile": "auto/f_001c2220.c"
+ },
+ {
+  "name": "f_001c2240",
+  "vaddr": 1843776,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 64 00 82 8c",
+  "cfile": "auto/f_001c2240.c"
+ },
+ {
+  "name": "f_001c2590",
+  "vaddr": 1844624,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 04 00 82 8c",
+  "cfile": "auto/f_001c2590.c"
+ },
+ {
+  "name": "f_001c3510",
+  "vaddr": 1848592,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 04 00 82 8c",
+  "cfile": "auto/f_001c3510.c"
+ },
+ {
+  "name": "f_001c3c40",
+  "vaddr": 1850432,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 a8 00 82 8c",
+  "cfile": "auto/f_001c3c40.c"
+ },
+ {
+  "name": "f_001c4990",
+  "vaddr": 1853840,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 04 00 82 8c",
+  "cfile": "auto/f_001c4990.c"
+ },
+ {
+  "name": "f_001c49a0",
+  "vaddr": 1853856,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 08 00 82 8c",
+  "cfile": "auto/f_001c49a0.c"
+ },
+ {
+  "name": "f_001c49b0",
+  "vaddr": 1853872,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 0c 00 82 8c",
+  "cfile": "auto/f_001c49b0.c"
+ },
+ {
+  "name": "f_001c49c0",
+  "vaddr": 1853888,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 14 00 82 8c",
+  "cfile": "auto/f_001c49c0.c"
+ },
+ {
+  "name": "f_001c49d0",
+  "vaddr": 1853904,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 18 00 82 8c",
+  "cfile": "auto/f_001c49d0.c"
+ },
+ {
+  "name": "f_00202b80",
+  "vaddr": 2108288,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 24 00 82 8c",
+  "cfile": "auto/f_00202b80.c"
+ },
+ {
+  "name": "f_00202bc0",
+  "vaddr": 2108352,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 20 00 82 8c",
+  "cfile": "auto/f_00202bc0.c"
+ },
+ {
+  "name": "f_00202bd0",
+  "vaddr": 2108368,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 14 00 82 8c",
+  "cfile": "auto/f_00202bd0.c"
+ },
+ {
+  "name": "f_00202be0",
+  "vaddr": 2108384,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 28 00 82 8c",
+  "cfile": "auto/f_00202be0.c"
+ },
+ {
+  "name": "f_00202d20",
+  "vaddr": 2108704,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 14 00 82 8c",
+  "cfile": "auto/f_00202d20.c"
+ },
+ {
+  "name": "f_00203df0",
+  "vaddr": 2113008,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 04 00 82 8c",
+  "cfile": "auto/f_00203df0.c"
+ },
+ {
+  "name": "f_00203e00",
+  "vaddr": 2113024,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 01 00 82 90",
+  "cfile": "auto/f_00203e00.c"
+ },
+ {
+  "name": "f_002043d0",
+  "vaddr": 2114512,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 00 00 82 8c",
+  "cfile": "auto/f_002043d0.c"
+ },
+ {
+  "name": "f_002087e0",
+  "vaddr": 2131936,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 02 00 82 90",
+  "cfile": "auto/f_002087e0.c"
+ },
+ {
+  "name": "f_00243c00",
+  "vaddr": 2374656,
+  "kind": "getter",
+  "bytes": "08 00 e0 03 dc 03 82 8c",
+  "cfile": "auto/f_00243c00.c"
+ }
+]

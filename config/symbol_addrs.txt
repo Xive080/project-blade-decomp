@@ -1,0 +1,13 @@
+# Mapa de símbolos conocidos de AirBlade (SCES-50246).
+# Formato splat: nombre = 0xVRAM; // type:func/data
+# Se irá rellenando según se identifiquen funciones. Semillas iniciales:
+
+entry = 0x00233218; // type:func  entry point del ELF (crt0)
+
+# --- RenderWare (NO decompilar; redirigir a port/rw via librw) ---
+# Marcadas como externas; nombres a confirmar por xrefs a las strings _rwPS2Mat*.
+# _rwPS2MatInstancePipelineNodeInit = 0x________; // type:func rw
+# RwEngineStart = 0x________; // type:func rw
+
+# --- SDK Sony (identificar por firmas; tratar como librería) ---
+# scePadRead, sceCdRead, sceMcSync, sceSifInit... pendientes de firmas.
