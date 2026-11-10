@@ -38,3 +38,31 @@ Reglas aprendidas con este compilador (mwccps2, -O4,p):
 - Sin solución: `movz` (0x2561d0, 0x2555c8), int en a0 devuelto como float vía `mtc1` (0x11a200), guardar $gp en un global (0x1df970).
 - Test `g==1` con `lw` desde $gp, `xori` y `sltiu`: `return g == 1;` (con `(g^1)==0` o `!(g^1)` salen instrucciones de más).
 - Intercambio de un global con offset negativo desde `lui` (0x101cd0): sale 1 instrucción más; el compilador no reutiliza el `lui` base. Sin solución.
+
+## Reglas aprendidas (tanda m2c + correcciones automáticas, 10 nov 2026)
+- `paddub rd, rs, zero` es el `move` de 128 bits que emite mwccps2 (copiar argumentos a `s0..s7`, `move a0,s0` antes de un `jal`). NO es código MMI escrito a mano: un filtro que descarta todo el opcode 0x1C (o lo que capstone no decodifica) deja fuera ~1 600 funciones normales del juego.
+- Inicios de función fiables: destinos de `jal` + la palabra que sigue al delay slot de un `jr ra` (saltando el relleno de `nop`). Si un salto relativo cae fuera del trozo, el trozo es parte de una función con varios `jr ra`: se une con el siguiente.
+- Dos globales `$gp` contiguas (p. ej. `-31848` y `-31844`) cuyo orden de `lw`/`sw` no sale: declara UN struct pequeño (`extern struct { s32 a; s32 b; } g;`) con tamaño <= 8 para que siga en `.sdata`.
+- Si una global se carga en `a2` (o `a3`) y `a1` no se toca antes del `jal`/`jalr`, la llamada recibe el `a1` del llamante sin cambios y la global como tercer argumento: `void f(s32 i, s32 b) { ... o->fn(o, b, t); }`.
+- m2c omite los parámetros que no se usan (`func(s32 arg1)`) y los argumentos que pasan tal cual a otra función (`a0` sin tocar antes del `jal`): rellena la firma (`s32 arg0, s32 arg1`) y prueba a pasar `arg0` como primer argumento.
+- `arg0 + 4` de m2c sobre un `s32 *` escala x4 (sale `addiu a0,a0,16`): el desplazamiento es en bytes, usa `(s8 *)arg0 + 4` o un struct.
+- `*(&D + (i * 4))` con `D` de tipo desconocido sale con `sll 4`: usa `*(s32 *)((s8 *)&D + i * 4)` o `extern s32 D[]; D[i]`.
+- `struct S { char pad[0x30]; s32 x; }; f(p->x); p->x = 0;` conserva `move s0,a0` + `sw zero,48(s0)`; con `M2C_FIELD` el compilador precalcula `s0 = a0 + 48`.
+- En Docker amd64 sobre Mac ARM (qemu) no lances `subprocess` desde hilos (`ThreadPoolExecutor`): los `fork` se quedan colgados. Usa `ProcessPoolExecutor`.
+- Sin solución aún: `lui v0,0x31; addiu v0,v0,X; li v1,0x8840; addu v0,v0,v1` (offset > 0x7fff sobre una base; el compilador lo pliega en `lui at,1` + `lw -30656(at)`). Argumentos `a1`=dirección de código (callback) y `a2`=`&local` emitidos en orden inverso (0x142910, 0x24a130, 0x24a6f0): ni prototipo de puntero a función ni permuter (150 s) lo arreglan.
+- `objdump -D` sin `-z` resume las rachas de palabras a cero (`...`): el nº de líneas no cuadra y `disasm_od` caía a capstone, que lee mal el R5900 (`sq` sale como `ext`, MMI como MSA). `disasm_od` ya pasa `-z`.
+- m2c no conoce las MAC de la FPU del EE (`mula.s`, `adda.s`, `madd.s`, `msub.s`): `tools/m2c_pass.py` las traduce antes de m2c usando `$f31` como acumulador (`madd.s d,s,t` -> `mul.s $f30,s,t; add.s d,$f31,$f30`). mwccps2 las vuelve a generar a partir de `a*b + c*d`.
+- Array global indexado (`lui/addiu` + `sll 2` + `addu` + `lw`): `extern s32 D[]; return D[i];`. Si la base es `$gp` (`addiu v0,gp,X`), el array necesita tamaño <= 8 para quedar en `.sdata`: `extern s32 G[2];`.
+- El EE pasa hasta 8 argumentos en registros (`a0..a3`, `t0..t3`). m2c no ve el 5º argumento en `t0` (`li t0,4` antes del `jal` queda suelto): añádelo al prototipo y a la llamada (`f(0x30, 1, 0x60, 1, 4)`).
+- Llamada por puntero que recibe la misma estructura (`paddub s0,a0,zero; lw v0,16(s0); jalr v0; nop`): `p->fn(p); return p;` con `struct S { char pad[0x10]; void (*fn)(struct S *); };`. Sin pasar `p` el compilador carga desde `a0` y rellena el delay slot.
+- `addiu v0,a0,4` en el delay slot de un `beqz` + `lw v0,0(v0)` después: el puntero al campo se calcula ANTES del `if`: `s32 *q = p->b; if (p->d) *p->d = *q;` (con `b` array).
+- `xor` + `sltiu 1` + `xori 1` = `!(f() == g)`; con `!=` sale `sltu v0,zero,v0`.
+- Funciones idénticas salvo relocs: compara la secuencia de palabras con relocs (`jal`, `lui`, `%lo`, `$gp`) enmascarados contra las ya igualadas y reutiliza su C (5 de una pasada).
+- Sin solución: delay slot de rama sin rellenar (`bne zero,v0,X; nop`) donde mwccps2 lo rellena (0x23bd90, 0x23bed0); argumentos `a2=&local` antes que `a1=const` (0x238350).
+- Argumento float constante (`mtc1 zero,$f12` antes del `jal`): m2c lo pierde; declara el parámetro `f32` y pasa `0.0f` (`f(v, 0.0f)`).
+- Campos a más de 0x7fff de la base (`lui at,0x1; addu at,s0,at; lw -13348(at)`): usa un struct real con sub-structs y arrays (`struct S { s32 on; char a[0x5704]; struct B b; s32 x; }`); con `M2C_FIELD` sale `li at,0xcbdc; addu; lw 0`. Las llamadas tipo memset reciben `sizeof` del campo.
+- En funciones que usan `$gp` se compila con `-sdatathreshold 8`: una global accedida con `lui/addiu` (no `$gp`) declarada como `extern s32 D;` cae en `.sdata` y sale con `$gp`. Dale tamaño > 8 (`extern struct { s32 v; char pad[12]; } D_;` y `#define D (D_.v)`) o declárala como array sin tamaño. En una tanda, esta corrección recuperó 27 de 64 funciones.
+- Orden de argumentos `li a2`/`move a1,zero` o stores tras un `jal` (0x2105f0, 0x159ed0): ni -O3/-O4,s/-opt noschedule ni 2.3.3 lo cambian.
+- Bucle de 1 iteración sobre una tabla (`addiu s0,s0,1` + `beqz s0`): índice `u32` con `i < 1` (con `s32` sale `blez`). m2c avanza el puntero en bytes (`var_s1 += 4` sobre `s8 **`): es `pp++`.
+- Argumento que es la dirección de un campo (`addiu a0,s0,4` repetido en dos llamadas): usa un struct con un array en ese offset (`struct S { s32 on; char a[4]; }; f(p->a)`); con `(s8 *)p + 4` el compilador reutiliza el valor y sale distinto.
+- Flags `u16` en el offset 0 (`lhu`): m2c a veces lo tipa `s16` (`lh`); declara el campo `u16`.

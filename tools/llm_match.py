@@ -63,7 +63,7 @@ def disasm_od(raw, va):
         return disasm(raw, va)
     with tempfile.NamedTemporaryFile(suffix=".bin") as f:
         f.write(raw); f.flush()
-        r = subprocess.run([str(od), "-b", "binary", "-m", "mips:5900", "-EL", f"--adjust-vma={va}", "-D", f.name],
+        r = subprocess.run([str(od), "-b", "binary", "-m", "mips:5900", "-EL", f"--adjust-vma={va}", "-z", "-D", f.name],
                            capture_output=True, text=True)
     rows = [f"{int(m.group(1), 16):08x}: {m.group(3).strip().replace(chr(9), ' ')}"
             for m in (re.match(r"\s*([0-9a-f]+):\s*\t?([0-9a-f]{8})\s*\t(.*)$", l) for l in r.stdout.splitlines()) if m]
