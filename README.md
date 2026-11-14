@@ -1,5 +1,7 @@
 # AirBlade Decomp (Camino B — decomp + motor sustituido)
 
+> 🔴 **Estado:** el trabajo está ahora en la recomp de AirBlade (pausa del decomp por ahora). La recomp ya arranca y se juega entera, pero aún no llega a 60 FPS: ~24 V/s en partida con el VU1 nativo (14,7 sin él, modo determinista); el GS en GPU (Vulkan) ya da 0 diferencias frente a la CPU y sube el menú de 46 a 77 V/s. Falta medir todo junto.
+
 Decompilación del juego de PS2 **AirBlade** (PAL, `SCES-50246`) con el objetivo de
 un port jugable a PC, siguiendo el patrón del proyecto BT3-Decompiled pero adaptado
 al hecho de que AirBlade usa el motor **RenderWare**.
