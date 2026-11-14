@@ -22,11 +22,8 @@
   .scroll { max-height:20rem; overflow:auto; } table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
   th { position:sticky; top:0; background:var(--panel); text-align:left; color:var(--muted); font-weight:600; padding:6px 8px; border-bottom:1px solid var(--line); } td { padding:5px 8px; border-bottom:1px solid var(--line); }
   .ok { color:var(--ok); } .no { color:var(--muted); } .msg { color:var(--muted); font-size:13px; min-height:1.3em; } ul { margin:0; padding-left:1.1rem; } li { margin:4px 0; }
-  .alert { background:#b3261e; color:#fff; border-radius:8px; padding:12px 16px; font-size:14px; } .alert b { display:block; margin-bottom:4px; } .alert p { margin:4px 0 0; }
 </style></head><body><main>
 <h1>AirBlade Decomp</h1>
-<div class="alert" role="alert"><b>Estado: el trabajo está ahora en la recomp (pausa del decomp por ahora)</b>
-<p>La recomp de AirBlade ya arranca y se juega entera, pero todavía no llega a 60 FPS. Con el VU1 compilado a código nativo la partida pasa de 14,7 a unos 24 V/s (VSync por segundo, modo determinista). El GS dibujado por CPU limita a unos 30 V/s: el GS en GPU (Vulkan) ya da 0 diferencias frente a la CPU y sube el menú de 46 a 77 V/s. Falta medir todo junto y bajar el coste del GS.</p></div>
 <p class="msg" id="head">Cargando…</p>
 <div class="tiles" id="tiles"></div>
 
