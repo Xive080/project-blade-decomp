@@ -1,0 +1,32 @@
+struct E { char pad[8]; unsigned short n; unsigned short k; char pad2[16]; };
+struct O { unsigned short a; unsigned short n; char *p4; char *p8; int c; };
+struct V { char pad[304]; struct O *(*alloc)(int); };
+extern struct E T[];
+extern char V0[];
+extern char X[];
+extern char Y[];
+extern void clr(struct O *, int, int);
+extern int *cnt(char *, unsigned short);
+extern int *get(char *, int);
+struct O *func(int arg) {
+    struct O *o;
+    struct E *e;
+    int sz;
+    int c;
+    int *r;
+    unsigned short n;
+    e = &T[arg];
+    sz = (e->n << 4) + 16;
+    o = ((struct V *)V0)->alloc(sz);
+    clr(o, 0, sz);
+    o->n = e->n;
+    o->p4 = (char *)o + 16;
+    n = e->n;
+    o->p8 = o->p4 + n * 12;
+    o->a = e->k;
+    r = cnt(X, n);
+    c = *r;
+    o->c = c;
+    *(struct O **)((char *)get(Y + arg * 8, c) + 8) = o;
+    return o;
+}

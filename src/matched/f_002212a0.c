@@ -1,0 +1,64 @@
+struct R { void *a; int b; int c[5]; };
+struct B { char p0, p1, kind; };
+struct G { char pad[304]; struct R *(*get)(int); };
+extern char D_0032A620[];
+extern char D_00221450[];
+extern float G1;
+extern int G2;
+extern int G3;
+extern int func_001c35a0(void);
+extern int func_001cc900(void *);
+extern int func_00201600(void);
+extern void func_00201720(void *, int, int);
+extern void func_00202670(void *, int);
+extern int *func_00202b60(int);
+extern void func_00202b90(int, int *, int, int, int);
+extern void func_00202bb0(int, int *, int);
+extern int func_00202d10(int);
+extern int func_00202e90(int, int, int);
+extern void func_00203320(int);
+extern int func_00204180(void);
+extern void func_002042f0(int, void *);
+extern void func_002047f0(int, float *);
+extern void func_00207ef0(void *, int);
+extern void func_00209ff0(void *, int);
+
+struct R *func(unsigned n, void *p) {
+    float f;
+struct B *u;
+int t;
+struct R *r;
+int i;
+int m;
+int a;
+int b;
+int *c;
+    *(float *)&f = G1;
+    r = ((struct G *)D_0032A620)->get(28);
+    if (n < 3) n = 3;
+    m = n - 2;
+    a = func_00202e90(n, m, 5);
+    p = (void *)func_001cc900(p);
+    b = func_00204180();
+    func_002047f0(b, &f);
+    func_002042f0(b, p);
+    c = func_00202b60(a);
+    for (i = 0; i < m; i++) {
+        func_00202b90(a, c, i & 0xffff, (i + 1) & 0xffff, (i + 2) & 0xffff);
+        func_00202bb0(a, c, b);
+        c += 2;
+    }
+    func_00207ef0(D_00221450, 0);
+    t = func_00202d10(a);
+    u = (struct B *)func_00201600();
+    func_00202670(u, func_001c35a0());
+    func_00201720(u, t, 0);
+    func_00203320(t);
+    u->kind = 4;
+    func_00209ff0(u, G2);
+    *(struct R **)((char *)u + G3) = r;
+    r->a = u;
+    r->b = n;
+    r->c[0] = 0; r->c[1] = 0; r->c[2] = 0; r->c[3] = 0; r->c[4] = 0;
+    return r;
+}

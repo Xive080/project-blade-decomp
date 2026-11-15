@@ -1,0 +1,31 @@
+asm void f(void) {
+    .set noreorder
+    .set noat
+    .word 0xc4820000
+    .word 0xc4810004
+    .word 0xc4800008
+    .word 0x3c030030
+    addiu v1,v1,-23792
+    .word 0x3c010030
+    .word 0xe4620000
+    .word 0xe4610004
+    .word 0xe4600008
+    .word 0xc4a00000
+    .word 0xe420a330
+    .word 0xc4a00004
+    .word 0x3c010030
+    .word 0xe420a334
+    .word 0xc4a00008
+    .word 0x3c010030
+    .word 0xe420a338
+    .word 0xc4c00000
+    .word 0x3c010030
+    .word 0xe420a340
+    .word 0xc4c00004
+    .word 0x3c010030
+    .word 0xe420a344
+    .word 0xc4c00008
+    .word 0x3c010030
+    jr ra
+    .word 0xe420a348
+}

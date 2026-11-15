@@ -1,0 +1,36 @@
+cmake_minimum_required(VERSION 3.16)
+project(plat_audio_m4 C CXX)
+
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 17)
+
+option(PLAT_AUDIO_SDL3 "Compilar el backend SDL3 (requiere SDL3 instalado)" OFF)
+set(PLAT_M4_RECOMP_VAG_CPP "" CACHE FILEPATH "Ruta opcional a ps2_audio_vag.cpp de la recomp, para el test comparativo")
+
+add_library(plat_audio STATIC src/plat_vag.c src/plat_mixer.c src/plat_audio_out.c)
+target_include_directories(plat_audio PUBLIC include)
+if(NOT WIN32)
+  target_link_libraries(plat_audio PUBLIC m)
+endif()
+
+if(PLAT_AUDIO_SDL3)
+  find_package(SDL3 REQUIRED CONFIG)
+  target_sources(plat_audio PRIVATE src/plat_audio_out_sdl3.c)
+  target_compile_definitions(plat_audio PUBLIC PLAT_AUDIO_SDL3)
+  target_link_libraries(plat_audio PUBLIC SDL3::SDL3)
+endif()
+
+enable_testing()
+foreach(t test_vag test_mixer test_audio_out)
+  add_executable(${t} tests/${t}.c)
+  target_link_libraries(${t} plat_audio)
+  add_test(NAME ${t} COMMAND ${t})
+endforeach()
+add_test(NAME test_audio_out_wav COMMAND test_audio_out ${CMAKE_CURRENT_BINARY_DIR}/m4_test.wav)
+
+if(PLAT_M4_RECOMP_VAG_CPP)
+  add_executable(test_vs_recomp tests/test_vs_recomp.cpp "${PLAT_M4_RECOMP_VAG_CPP}")
+  target_include_directories(test_vs_recomp PRIVATE tests tests/shim)
+  target_link_libraries(test_vs_recomp plat_audio)
+  add_test(NAME test_vs_recomp COMMAND test_vs_recomp)
+endif()

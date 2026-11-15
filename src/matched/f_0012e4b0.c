@@ -1,0 +1,35 @@
+struct O { char pad0[48]; int *a; char pad1[128]; int *b; };
+extern void f12e710(int);
+extern int f142ad0(int);
+extern int f142aa0(int, int);
+extern int f170000(void *);
+extern int f2018c0(int);
+extern int *f201b60(void);
+extern void f201cc0(int *, int);
+extern void f202670(int, int);
+extern void f209ff0(int, int);
+extern void f2476c0(int, void *);
+extern void f247de0(int, void *);
+extern char D1[];
+extern int D2[];
+extern char D3[];
+extern char D4[];
+void func(struct O *o) {
+    int s1; int s2; int s3; int s4;
+    f12e710(f142ad0((int)o->a));
+    s3 = o->a[1];
+    s1 = f170000(D1);
+    s4 = f142aa0(s1, f142ad0(s1));
+    o->b = f201b60();
+    o->b[1] = s3;
+    s2 = f2018c0(s4);
+    f202670(s2, s3);
+    f201cc0(o->b, s2);
+    f209ff0(s2, D2[0]);
+    f2476c0(s2, D3);
+    s1 = f2018c0(f142aa0(s1, s4));
+    f202670(s1, s3);
+    f201cc0(o->b, s1);
+    f209ff0(s1, D2[1]);
+    f247de0(s1, D4);
+}

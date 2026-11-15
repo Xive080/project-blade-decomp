@@ -1,0 +1,36 @@
+extern void func_001214b8(void *, void *, void *);
+extern void func_00121b70(void *);
+extern char D_002F0230[];
+extern char D_00328648[];
+extern char D_00328580[];
+extern s32 D_00328510[];
+extern u32 D_00328514[];
+extern s32 D_00328518[];
+extern s32 D_0032851C[];
+extern s32 D_00328520[];
+extern char *D_00328524[];
+extern s32 D_0032852C[];
+extern s32 D_00328668[];
+struct Dev { char pad[152]; s32 (*fn)(struct Dev *, void *); };
+struct A { struct Dev *dev; s32 r4; s32 r8; s32 f; s32 g; };
+s32 func(struct A *a) {
+    char sp[64];
+    s32 v;
+    if (D_00328514[0] < 5) return 0;
+    a->f = 1;
+    a->g = -1;
+    if (a->r4 != 0) return 0;
+    func_001214b8(sp, D_002F0230, D_00328648);
+    func_00121b70(sp);
+    v = a->dev->fn(a->dev, sp);
+    D_0032852C[0] = v;
+    if (v == 0) return 0;
+    D_00328510[0] = (s32)a;
+    D_00328668[0] = (s32)a + 20;
+    D_00328514[0] = 3;
+    D_00328518[0] = 10;
+    D_0032851C[0] = -1;
+    D_00328520[0] = 6;
+    D_00328524[0] = D_00328580;
+    return 1;
+}

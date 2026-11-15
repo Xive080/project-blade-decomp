@@ -1,0 +1,43 @@
+asm void f(void) {
+    .set noreorder
+    .set noat
+    lwc1 $f1,16(a0)
+    lui v0,0x3f80
+    mtc1 v0,$f4
+    lwc1 $f0,28(a1)
+    lui v0,0x3f00
+    mtc1 v0,$f5
+    nop
+    sub.s $f1,$f1,$f4
+    addiu v0,zero,1
+    mul.s $f1,$f1,$f12
+    add.s $f1,$f4,$f1
+    mul.s $f0,$f0,$f1
+    swc1 $f0,28(a1)
+    lwc1 $f0,8(a0)
+    lwc1 $f1,12(a0)
+    lwc1 $f3,8(a1)
+    sub.s $f0,$f0,$f4
+    mul.s $f0,$f0,$f12
+    sub.s $f1,$f1,$f4
+    mul.s $f1,$f1,$f12
+    add.s $f0,$f4,$f0
+    mul.s $f0,$f3,$f0
+    add.s $f2,$f4,$f1
+    swc1 $f0,8(a1)
+    .word 0x46000046
+    sub.s $f1,$f3,$f1
+    lwc1 $f0,0(a1)
+    mul.s $f1,$f5,$f1
+    add.s $f0,$f0,$f1
+    swc1 $f0,0(a1)
+    lwc1 $f1,12(a1)
+    mul.s $f0,$f1,$f2
+    sub.s $f1,$f1,$f0
+    swc1 $f0,12(a1)
+    lwc1 $f0,4(a1)
+    mul.s $f1,$f5,$f1
+    add.s $f0,$f0,$f1
+    jr ra
+    swc1 $f0,4(a1)
+}

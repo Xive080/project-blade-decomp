@@ -1,0 +1,36 @@
+asm void f(void) {
+    .set noreorder
+    .set noat
+    .word 0xc4e50000
+    .word 0xc4c40000
+    .word 0xc4e20008
+    .word 0xc4c10008
+    .word 0xc4e30004
+    .word 0xc4c00004
+    .word 0xc4a60004
+    sub.s $f4,$f5,$f4
+    .word 0xc4880028
+    .word 0xc4a70000
+    sub.s $f1,$f2,$f1
+    .word 0xc4a50008
+    sub.s $f3,$f3,$f0
+    mula.s $f6,$f1
+    msub.s $f2,$f5,$f3
+    .word 0xc4800010
+    mul.s $f2,$f2,$f8
+    add.s $f0,$f2,$f0
+    mula.s $f5,$f4
+    msub.s $f1,$f7,$f1
+    .word 0xe4800010
+    .word 0xc4800014
+    mul.s $f1,$f1,$f8
+    add.s $f0,$f1,$f0
+    mula.s $f7,$f3
+    .word 0xe4800014
+    msub.s $f3,$f6,$f4
+    .word 0xc4800018
+    mul.s $f3,$f3,$f8
+    add.s $f0,$f3,$f0
+    jr ra
+    .word 0xe4800018
+}

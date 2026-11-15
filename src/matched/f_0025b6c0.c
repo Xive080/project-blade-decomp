@@ -1,0 +1,61 @@
+typedef struct { f32 x, y; } V2;
+typedef struct { f32 a, b, c, d; } F4;
+struct Pn { char p0[12]; s32 flags; f32 x; f32 y; };
+struct Pq { char p0[28]; f32 f28; };
+struct O { struct Pn *a; s32 r; struct Pq *b; struct Pq *d; };
+struct Rs { s32 id; s32 p; };
+struct Q { s32 t; f32 a, b, c, d, e, f; F4 v; s32 r4; char *str; f32 w; s32 pad[4]; };
+struct Q2 { s32 t; f32 a, b, c, d; s32 p[2]; s32 h; f32 i; s32 j, k, l, m; };
+struct H { char pad[44]; s32 f44; };
+struct G { char pad[0x348c]; char *s; u32 lim; u32 cnt; char pad2[8]; struct H *h; };
+extern struct G g;
+extern struct Rs *rs;
+extern F4 t1, t2;
+void fn_a(struct Pn *, struct O *);
+s32 fn_b(char *);
+f32 fn_c(s32, char *);
+void fn_d(void *);
+struct Pq *fn_e(struct Q *, s32, struct Pn *, s32);
+s32 fn_f(struct Pn *, void *, void *, struct O *);
+void cb(void);
+
+void f(void *u, struct O *o) {
+    struct Pn *p;
+    V2 t;
+    struct Q2 z;
+    struct Q q;
+    char *s;
+    u32 i;
+    s32 r;
+    f32 d;
+    struct Pq *pb;
+    t = *(V2 *)&o->a->x;
+    fn_a(o->a, o);
+    p = o->a;
+    p->x = t.x - 1152.0f;
+    p->y = t.y;
+    p->flags |= 1;
+    s = g.s;
+    g.cnt++;
+    if (g.lim != 0) {
+        if (!(g.cnt < g.lim)) g.cnt = 0;
+        for (i = 0; i < g.cnt; i++) s += fn_b(s) + 1;
+    }
+    d = o->b->f28;
+    r = rs->p;
+    q.t = 2; q.a = 0.5f; q.b = 0.0f; q.c = 320.0f;
+    q.d = d;
+    q.r4 = r; q.str = s;
+    q.w = fn_c(r, s);
+    q.e = 50.0f * q.w;
+    q.f = 50.0f;
+    q.v = t1;
+    fn_d(o->b);
+    fn_d(o->d);
+    o->b = fn_e(&q, rs->id, o->a, g.h->f44 + 1);
+    q.v = t2;
+    o->d = fn_e(&q, rs->id, o->a, g.h->f44);
+    z.i = 0.2f; z.j = 0; z.k = 2; z.l = 0; z.m = 0;
+    z.t = 7; z.a = -1152.0f; z.b = 0.0f; z.c = 1.8f; z.d = 1.0f; z.h = 1;
+    o->r = fn_f(o->a, &z, cb, o);
+}

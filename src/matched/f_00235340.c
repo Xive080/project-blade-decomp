@@ -1,0 +1,30 @@
+struct V4 { f32 a, b, c, d; };
+struct C { char pad[0x884]; struct V4 v0; char pad2[0x10]; struct V4 v1; };
+struct M2 { char pad[0x84]; char *tab; };
+struct M3 { char pad[0x14]; struct M2 *m; char pad2[0x18]; struct C *c; };
+extern struct M3 *G_84B0;
+extern u8 D_002FA61F[];
+void func(char *p) {
+    u32 *a;
+    u32 *b;
+    struct C *c;
+    *(s32*)(p + 52) = 0;
+    *(s32*)(p + 60) = 0;
+    *(s32*)(p + 68) = 0;
+    *(s32*)(p + 76) = 0;
+    *(s32*)(p + 80) = 0;
+    *(s32*)(p + 84) = 0;
+    *(s32*)(p + 88) = 0;
+    *(s32*)(p + 56) = 0;
+    *(f32*)(p + 148) = *(f32*)0x70003FB0;
+    *(s32*)(p + 152) = 0;
+    a = (u32*)(G_84B0->m->tab + (*(u16*)(p + 28) + 1) * 20);
+    *a |= 2;
+    b = (u32*)(G_84B0->m->tab + (*(u16*)(p + 28) + 2) * 20);
+    *b |= 2;
+    if (D_002FA61F[0] == 4) *(s8*)(p + 48) = 99; else *(s8*)(p + 48) = 97;
+    c = G_84B0->c;
+    *(struct V4*)(p + 112) = c->v0;
+    c = G_84B0->c;
+    *(struct V4*)(p + 128) = c->v1;
+}

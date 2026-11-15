@@ -1,0 +1,24 @@
+extern int G_8350;
+extern int G_8360;
+extern char D_00145030[];
+struct B { int w[16]; };
+struct O { char pad[16]; struct B b; struct B c; };
+extern int func_001c2510(int);
+extern int *func_001c3b70(int);
+extern void func(int a){ struct O *o; int *p;
+ if (G_8350 == 0 || G_8360 == 0) return;
+        o = (struct O *)func_001c2510(G_8350);
+        p = func_001c3b70((int)o);
+        p[12] = 0; p[13] = 0; p[14] = 0;
+        func_0015d760(p, a, 0);
+        func_001c7320(p);
+        o->c = o->b;
+        func_001c42c0(o, D_00145030, 0);
+        o = (struct O *)func_001c2510(G_8360);
+        p = func_001c3b70((int)o);
+        p[12] = 0; p[13] = 0; p[14] = 0;
+        func_0015d760(p, a, 0);
+        func_001c7320(p);
+        o->c = o->b;
+        func_001c42c0(o, D_00145030, 0);
+}

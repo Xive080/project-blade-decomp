@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# Enlaces a mano para nombres LOCALES de los fragmentos de src/matched (A, D0, f1...): el C byte-match
+# se compilo con simbolos locales y la direccion real la pone el enlazador, asi que no esta en el fuente.
+# Formato: XXXXXXXX nombre func|data 0xDIRECCION    (XXXXXXXX = direccion del fichero f_XXXXXXXX.c)
+# Cada linea se saca del desensamblado de esa funcion en el ELF del usuario (solo lectura).
+
+# --- 0x0022b5f0: carga de las 7 IRX. Cadenas leidas en el ELF: D0="cdrom0:\", D1="%s%s", D2..D8 = IRX\SIO2MAN.IRX;1,
+#     PADMAN, MCMAN, MCSERV, GTFSCDVD, LIBSD, TSSDRV (confirmado: las cadenas existen en esas direcciones).
+0022b5f0 D0 data 0x2f0c08
+0022b5f0 D1 data 0x2f0c18
+0022b5f0 D2 data 0x2f0c20
+0022b5f0 D3 data 0x2f0c40
+0022b5f0 D4 data 0x2f0c60
+0022b5f0 D5 data 0x2f0c70
+0022b5f0 D6 data 0x2f0c90
+0022b5f0 D7 data 0x2f0cb0
+0022b5f0 D8 data 0x2f0cc0
+
+# --- 0x0016bd50: tres registros (f1 = 0x1c2a00, igual que en 0x208770, 0x16b390, 0x249010, 0x247df0). A..I NO son datos:
+#     son direcciones de CODIGO (callbacks) que el original pasa a f1/f2/f3; orden de las constantes lui/addiu del ELF
+#     (hipotesis de correspondencia por orden de aparicion: 8 constantes para 8 nombres). G = gp-31840.
+0016bd50 f1 func 0x001c2a00
+0016bd50 f2 func 0x001c4350
+0016bd50 f3 func 0x001bf330
+0016bd50 A data 0x16c1a0
+0016bd50 B data 0x16c180
+0016bd50 C data 0x16c150
+0016bd50 D data 0x16c140
+0016bd50 E data 0x16c100
+0016bd50 F data 0x16be10
+0016bd50 H data 0x16c090
+0016bd50 I data 0x16be00
+0016bd50 G data 0x2f1a90
+
+# --- llamadas con nombre local, propuestas por tools/bind_locals.py (misma secuencia de llamadas C/jal; revisadas)
+0016b390 f1 func 0x001c2a00
+0016b390 f2 func 0x002025c0
+0016b390 f3 func 0x00202640
+00249010 sub1 func 0x001c2a00
+00249010 sub2 func 0x00202590
+00247df0 h1 func 0x001c2a00
+00247df0 h2 func 0x00202590
+
+# --- 0x001953c0 main: D1="cdrom0:\%s;1", D2="IOPRP23.IMG" (cadenas leidas en el ELF), D3/D4 = buffers 0x2e15d0/0x2e15f0
+#     que reciben D5="/" y D6="cd0:" (strcpy; orden de los argumentos en el desensamblado).
+001953c0 D1 data 0x2efe10
+001953c0 D2 data 0x2efe20
+001953c0 D3 data 0x2e15d0
+001953c0 D4 data 0x2e15f0
+001953c0 D5 data 0x2efe30
+001953c0 D6 data 0x2efe38

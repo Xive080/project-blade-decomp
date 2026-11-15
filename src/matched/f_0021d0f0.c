@@ -1,0 +1,32 @@
+asm void f(void) {
+    .set noreorder
+    .set noat
+    .word 0x70002e28
+    .word 0x44800000
+    .word 0x44800800
+    .word 0x70001e28
+    .word 0xc4820000
+    .word 0xc4800004
+    .word 0xc4830008
+    .word 0x3c03437f
+    .word 0x34630001
+    .word 0x44832000
+    .word 0x00000000
+    .word 0x46040042
+    .word 0x44056000
+    .word 0x44030800
+    .word 0x70052f89
+    .word 0x70031f89
+    .word 0x46041802
+    .word 0x46041042
+    .word 0x44050000
+    .word 0x44030800
+    .word 0x00000000
+    .word 0x70a32cc8
+    .word 0x8f848690
+    .word 0x24830010
+    .word 0xaf838690
+    .word 0x7c850000
+    .word 0x03e00008
+    .word 0x00000000
+}

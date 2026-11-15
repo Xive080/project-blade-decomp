@@ -1,0 +1,54 @@
+extern void fn189710(void);
+extern void fn1a8e80(void);
+asm void func(void) {
+.set noreorder
+.set noat
+    lhu v1,30(a0)
+    .word 0x8f8284b0
+    addu v1,a1,v1
+    .word 0x8c42001c
+    andi a1,v1,0xffff
+    sll v1,a1,0x3
+    subu v1,v1,a1
+    sll v1,v1,0x2
+    addu v1,v1,a1
+    sll v1,v1,0x2
+    j fn1a8e80
+    addu a0,v0,v1
+    addiu sp,sp,-48
+    .word 0x7fbf0020
+    .word 0x7fb00010
+    .word 0xe7b40000
+    .word 0x8f8284b0
+    .word 0x70808628
+    .word 0x8c440014
+    jal fn189710
+    mov.s $f20,$f12
+    .word 0xc6010004
+    .word 0xc6000000
+    .word 0xe4400010
+    .word 0xe4410014
+    .word 0x8c43000c
+    ori v1,v1,0x1
+    .word 0xac43000c
+    .word 0xc4400018
+    mul.s $f0,$f0,$f20
+    .word 0xe4400018
+    .word 0xc440001c
+    mul.s $f0,$f0,$f20
+    .word 0xe440001c
+    .word 0xc4400020
+    mul.s $f0,$f0,$f20
+    .word 0xe4400020
+    .word 0xc4400024
+    mul.s $f0,$f0,$f20
+    .word 0xe4400024
+    .word 0x8c43000c
+    ori v1,v1,0x2
+    .word 0xac43000c
+    .word 0x7bbf0020
+    .word 0x7bb00010
+    .word 0xc7b40000
+    jr ra
+    addiu sp,sp,48
+}

@@ -1,0 +1,44 @@
+extern int func_00189320(char *, int, int, int, int, int);
+extern int func_00189240(int, char *, int, int);
+extern void func_001892c0(int);
+struct V { int z0; int z1; float f[8]; };
+struct S { int t; char *p; struct V d; float e; };
+struct T { int a; int b; float c; int pad[4]; int d; float e; int f; int g; int h; int i; };
+struct G { char pad[20]; int w; };
+struct O { char pad[28]; unsigned short n; char pad2[22]; int a; char pad3[12]; int h; int k; int j; };
+struct X { char pad[4]; volatile int v; };
+extern struct V D_002e0700;
+extern struct X D_002e0690[];
+extern struct G *gg;
+void f(int a, struct O *o)
+{
+    struct S s;
+    struct T t;
+    float k = 6.0f;
+    struct V *sp_;
+    sp_ = &s.d;
+    *sp_ = D_002e0700;
+    s.e = 1.0f;
+    s.t = 3;
+    s.p = (char *)D_002e0690;
+    s.d.z0 = 0;
+    s.d.z1 = 0;
+    s.d.f[0] *= 3.0f;
+    s.d.f[1] *= 3.0f;
+    k = k / (float)D_002e0690[0].v;
+    s.d.f[2] *= k;
+    s.d.f[3] *= k;
+    o->h = func_00189320((char *)&s, gg->w, o->n + 1, o->n + 1, 0, o->a);
+    t.e = 2.0f;
+    t.f = 0;
+    t.g = 0;
+    t.h = 1;
+    t.i = 0;
+    t.a = 22;
+    t.b = 0;
+    t.c = -88.0f;
+    t.d = 1;
+    o->j = func_00189240(o->h, (char *)&t, 0, 0);
+    func_001892c0(o->k);
+    o->k = 0;
+}

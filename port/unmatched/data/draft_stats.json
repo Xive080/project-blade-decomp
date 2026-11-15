@@ -1,0 +1,5384 @@
+{
+ "totales": {
+  "total": 730,
+  "m2c_sin_borrador": 569,
+  "m2c_ok": 159,
+  "m2c_compila": 108,
+  "intento_c": 147,
+  "intento_compila": 105,
+  "m2c_FAIL": 2
+ },
+ "funciones": [
+  {
+   "addr": "0x001001a0",
+   "cause": "vu0_cop2",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001007e8",
+   "cause": "otro",
+   "n": 65,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00100d88",
+   "cause": "mmi",
+   "n": 80,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00101b90",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00101bc8",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 12
+  },
+  {
+   "addr": "0x00101cd0",
+   "cause": "otro",
+   "n": 4,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x00101ef0",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00102600",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incomplete type 'void' is not assignable"
+   ],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 18
+  },
+  {
+   "addr": "0x00103048",
+   "cause": "otro",
+   "n": 264,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001043c8",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 9
+  },
+  {
+   "addr": "0x001052d8",
+   "cause": "movz_movn",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00106300",
+   "cause": "movz_movn",
+   "n": 56,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 81
+  },
+  {
+   "addr": "0x00106568",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00106d30",
+   "cause": "otro",
+   "n": 122,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010750c",
+   "cause": "otro",
+   "n": 59,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001077b8",
+   "cause": "limite_dudoso",
+   "n": 13,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incomplete type 'void' is not assignable"
+   ],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 62
+  },
+  {
+   "addr": "0x001077ec",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00107dd0",
+   "cause": "movz_movn",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00107f00",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 6
+  },
+  {
+   "addr": "0x00107f20",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 2
+  },
+  {
+   "addr": "0x00107f30",
+   "cause": "otro",
+   "n": 4,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x00107f80",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 32
+  },
+  {
+   "addr": "0x00107fe8",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 's32 *' (aka 'int *') from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x001080c8",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 2
+  },
+  {
+   "addr": "0x001080d8",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 2
+  },
+  {
+   "addr": "0x001086b8",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00108868",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00108900",
+   "cause": "movz_movn",
+   "n": 53,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00109248",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00109258",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00109268",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00109278",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00109288",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00109298",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001095b0",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a488",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a5b0",
+   "cause": "tail_call_j",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a5c8",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a6f0",
+   "cause": "tail_call_j",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a928",
+   "cause": "syscall",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a938",
+   "cause": "syscall",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010a980",
+   "cause": "syscall",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010afd0",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010b010",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010be40",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('int' invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0010be88",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 6
+  },
+  {
+   "addr": "0x0010c188",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 8
+  },
+  {
+   "addr": "0x0010c4d8",
+   "cause": "otro",
+   "n": 42,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010c584",
+   "cause": "otro",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010cd38",
+   "cause": "tail_call_j",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010cdbc",
+   "cause": "otro",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0010cfb8",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 9
+  },
+  {
+   "addr": "0x0010da80",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00111a70",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00111ab8",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00112318",
+   "cause": "tail_call_j",
+   "n": 13,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 14
+  },
+  {
+   "addr": "0x00112408",
+   "cause": "tail_call_j",
+   "n": 13,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 14
+  },
+  {
+   "addr": "0x00113208",
+   "cause": "tail_call_j",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001144b0",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 13
+  },
+  {
+   "addr": "0x00114958",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00114dd8",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00117660",
+   "cause": "otro",
+   "n": 77,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00118728",
+   "cause": "otro",
+   "n": 86,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001191d0",
+   "cause": "otro",
+   "n": 65,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00119fc8",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011a0e0",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011a100",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011a128",
+   "cause": "movz_movn",
+   "n": 57,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011a210",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011c8e0",
+   "cause": "tail_call_j",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011df30",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011e950",
+   "cause": "mmi",
+   "n": 56,
+   "m2c": "ok",
+   "m2c_errors": 10,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ]
+  },
+  {
+   "addr": "0x0011ea30",
+   "cause": "movz_movn",
+   "n": 37,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011eb78",
+   "cause": "otro",
+   "n": 65,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'u8 *' (aka 'unsigned char *') from 'u32' (aka 'unsigned int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0011ed48",
+   "cause": "otro",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011edf8",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0011f088",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00121728",
+   "cause": "movz_movn",
+   "n": 45,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 58
+  },
+  {
+   "addr": "0x001217e0",
+   "cause": "mmi",
+   "n": 75,
+   "m2c": "ok",
+   "m2c_errors": 12,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s64' (aka 'long') invalid)"
+   ]
+  },
+  {
+   "addr": "0x00121a58",
+   "cause": "mmi",
+   "n": 69,
+   "m2c": "ok",
+   "m2c_errors": 12,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ]
+  },
+  {
+   "addr": "0x00121b70",
+   "cause": "mmi",
+   "n": 78,
+   "m2c": "ok",
+   "m2c_errors": 12,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ]
+  },
+  {
+   "addr": "0x00121ca8",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 20
+  },
+  {
+   "addr": "0x00121d00",
+   "cause": "movz_movn",
+   "n": 55,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 63
+  },
+  {
+   "addr": "0x00121de0",
+   "cause": "mmi",
+   "n": 107,
+   "m2c": "ok",
+   "m2c_errors": 12,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ]
+  },
+  {
+   "addr": "0x00121f90",
+   "cause": "movz_movn",
+   "n": 111,
+   "m2c": "ok",
+   "m2c_errors": 12,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ]
+  },
+  {
+   "addr": "0x00122150",
+   "cause": "movz_movn",
+   "n": 20,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 22
+  },
+  {
+   "addr": "0x001221a0",
+   "cause": "movz_movn",
+   "n": 27,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 35
+  },
+  {
+   "addr": "0x00123190",
+   "cause": "otro",
+   "n": 39,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001236f8",
+   "cause": "movz_movn",
+   "n": 8,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 11
+  },
+  {
+   "addr": "0x00127010",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001270a0",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00127210",
+   "cause": "otro",
+   "n": 158,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00127490",
+   "cause": "otro",
+   "n": 31,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00127510",
+   "cause": "otro",
+   "n": 138,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00127740",
+   "cause": "mmi",
+   "n": 1018,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00128730",
+   "cause": "otro",
+   "n": 118,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00128dd0",
+   "cause": "otro",
+   "n": 110,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00129150",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00129180",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001296b0",
+   "cause": "otro",
+   "n": 67,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001299e0",
+   "cause": "tail_call_j",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00129a20",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00129aa0",
+   "cause": "otro",
+   "n": 474,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012b360",
+   "cause": "otro",
+   "n": 103,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012b6e0",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 21
+  },
+  {
+   "addr": "0x0012b750",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 10
+  },
+  {
+   "addr": "0x0012bcc0",
+   "cause": "otro",
+   "n": 88,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012dff0",
+   "cause": "otro",
+   "n": 137,
+   "m2c": "FAIL",
+   "m2c_errors": 0
+  },
+  {
+   "addr": "0x0012e8d0",
+   "cause": "otro",
+   "n": 150,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012f0c0",
+   "cause": "mmi",
+   "n": 130,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012f2d0",
+   "cause": "mmi",
+   "n": 164,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0012ff90",
+   "cause": "mmi",
+   "n": 350,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00130520",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00130e10",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00130e80",
+   "cause": "tail_call_j",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001314e0",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00131550",
+   "cause": "otro",
+   "n": 19,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00131b70",
+   "cause": "otro",
+   "n": 28,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 28
+  },
+  {
+   "addr": "0x00132280",
+   "cause": "otro",
+   "n": 50,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 48
+  },
+  {
+   "addr": "0x00132d10",
+   "cause": "sin_jr_ra",
+   "n": 250,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00133120",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00133cd0",
+   "cause": "otro",
+   "n": 152,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00133f30",
+   "cause": "otro",
+   "n": 68,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00135b10",
+   "cause": "otro",
+   "n": 122,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00137350",
+   "cause": "otro",
+   "n": 136,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00137570",
+   "cause": "otro",
+   "n": 2300,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b1f0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b240",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b2c0",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b350",
+   "cause": "limite_dudoso",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b35c",
+   "cause": "sin_jr_ra",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b3d8",
+   "cause": "limite_dudoso",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013b940",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 6
+  },
+  {
+   "addr": "0x0013b950",
+   "cause": "otro",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013bad0",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 15
+  },
+  {
+   "addr": "0x0013bf20",
+   "cause": "otro",
+   "n": 51,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013c420",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0013f0c0",
+   "cause": "otro",
+   "n": 565,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00141960",
+   "cause": "otro",
+   "n": 164,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00141c60",
+   "cause": "otro",
+   "n": 162,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00142680",
+   "cause": "otro",
+   "n": 44,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00142910",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x00142960",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 24
+  },
+  {
+   "addr": "0x00142a60",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00142a90",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00142aa0",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00142ad0",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001446f0",
+   "cause": "otro",
+   "n": 466,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00145450",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00147b70",
+   "cause": "otro",
+   "n": 57,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion assigning to 'u32' (aka 'unsigned int') from 'void *' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00147c60",
+   "cause": "otro",
+   "n": 57,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion assigning to 'u32' (aka 'unsigned int') from 'void *' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00147d50",
+   "cause": "otro",
+   "n": 48,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00147e20",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0014a4d0",
+   "cause": "sin_optimizar",
+   "n": 28,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 11
+  },
+  {
+   "addr": "0x0014a7c0",
+   "cause": "otro",
+   "n": 95,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 83
+  },
+  {
+   "addr": "0x0014c280",
+   "cause": "otro",
+   "n": 818,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0014cf50",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001512d0",
+   "cause": "otro",
+   "n": 72,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00151d90",
+   "cause": "otro",
+   "n": 1531,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001552a0",
+   "cause": "otro",
+   "n": 1291,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00156c00",
+   "cause": "limite_dudoso",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00156c08",
+   "cause": "sin_jr_ra",
+   "n": 29,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00156c80",
+   "cause": "limite_dudoso",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00156cd0",
+   "cause": "otro",
+   "n": 75,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 66
+  },
+  {
+   "addr": "0x001572f0",
+   "cause": "otro",
+   "n": 1104,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00158430",
+   "cause": "otro",
+   "n": 62,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001593e0",
+   "cause": "otro",
+   "n": 56,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001594d0",
+   "cause": "otro",
+   "n": 51,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015a240",
+   "cause": "otro",
+   "n": 514,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015aa50",
+   "cause": "otro",
+   "n": 185,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015ad40",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 18
+  },
+  {
+   "addr": "0x0015b970",
+   "cause": "otro",
+   "n": 167,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 205
+  },
+  {
+   "addr": "0x0015bc10",
+   "cause": "otro",
+   "n": 45,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015bcd0",
+   "cause": "otro",
+   "n": 58,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015c7a0",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 32
+  },
+  {
+   "addr": "0x0015c850",
+   "cause": "movz_movn",
+   "n": 91,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015c9c0",
+   "cause": "otro",
+   "n": 29,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015ca40",
+   "cause": "otro",
+   "n": 180,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0015f2c0",
+   "cause": "otro",
+   "n": 87,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00161d20",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00161db0",
+   "cause": "otro",
+   "n": 171,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00162060",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 10
+  },
+  {
+   "addr": "0x00162840",
+   "cause": "otro",
+   "n": 153,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00162c40",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00165b90",
+   "cause": "otro",
+   "n": 236,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001663b0",
+   "cause": "otro",
+   "n": 575,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00166f10",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00166f90",
+   "cause": "otro",
+   "n": 283,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00167860",
+   "cause": "otro",
+   "n": 615,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00169470",
+   "cause": "otro",
+   "n": 110,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00169860",
+   "cause": "otro",
+   "n": 934,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016a700",
+   "cause": "otro",
+   "n": 44,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016a7b0",
+   "cause": "otro",
+   "n": 444,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016b220",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016b2f0",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 19
+  },
+  {
+   "addr": "0x0016b450",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0016b4c0",
+   "cause": "movz_movn",
+   "n": 21,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0016b700",
+   "cause": "otro",
+   "n": 31,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016bac0",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016c090",
+   "cause": "movz_movn",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016c100",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016c1c0",
+   "cause": "otro",
+   "n": 1027,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016e940",
+   "cause": "tail_call_j",
+   "n": 9,
+   "m2c": "FAIL",
+   "m2c_errors": 0
+  },
+  {
+   "addr": "0x0016e970",
+   "cause": "otro",
+   "n": 19,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016eeb0",
+   "cause": "movz_movn",
+   "n": 61,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016f130",
+   "cause": "otro",
+   "n": 63,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0016f230",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016f240",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016f380",
+   "cause": "tail_call_j",
+   "n": 69,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016f4c0",
+   "cause": "otro",
+   "n": 69,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 63
+  },
+  {
+   "addr": "0x0016fb00",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0016fdd0",
+   "cause": "otro",
+   "n": 82,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001700e0",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001704c0",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001704f0",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00170690",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00170c80",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00171010",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 11
+  },
+  {
+   "addr": "0x001710d0",
+   "cause": "tail_call_j",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001710f0",
+   "cause": "otro",
+   "n": 107,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001715f0",
+   "cause": "otro",
+   "n": 74,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00171860",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00171880",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001718d0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00171920",
+   "cause": "otro",
+   "n": 594,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001737a0",
+   "cause": "otro",
+   "n": 135,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001739c0",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 28
+  },
+  {
+   "addr": "0x00174020",
+   "cause": "otro",
+   "n": 43,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00174320",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001746c0",
+   "cause": "sin_optimizar",
+   "n": 66,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00177390",
+   "cause": "otro",
+   "n": 59,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00177fa0",
+   "cause": "otro",
+   "n": 42,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00178480",
+   "cause": "tail_call_j",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00178510",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00178b90",
+   "cause": "otro",
+   "n": 57,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00179220",
+   "cause": "otro",
+   "n": 29,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 24
+  },
+  {
+   "addr": "0x0017ae70",
+   "cause": "otro",
+   "n": 45,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 9
+  },
+  {
+   "addr": "0x0017b3f0",
+   "cause": "otro",
+   "n": 28,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017bd80",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x0017bdd0",
+   "cause": "otro",
+   "n": 140,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017c200",
+   "cause": "otro",
+   "n": 161,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017c490",
+   "cause": "otro",
+   "n": 126,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017cf70",
+   "cause": "otro",
+   "n": 229,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017d310",
+   "cause": "otro",
+   "n": 162,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017d5a0",
+   "cause": "otro",
+   "n": 513,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017ddb0",
+   "cause": "otro",
+   "n": 146,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017e000",
+   "cause": "otro",
+   "n": 114,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017e1d0",
+   "cause": "otro",
+   "n": 143,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017e660",
+   "cause": "otro",
+   "n": 95,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017e8d0",
+   "cause": "vu0_cop2",
+   "n": 204,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017ec10",
+   "cause": "vu0_cop2",
+   "n": 119,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017edf0",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017f5c0",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017f6b0",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017f740",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017f790",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017f820",
+   "cause": "otro",
+   "n": 136,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017fc00",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 10
+  },
+  {
+   "addr": "0x0017fc70",
+   "cause": "otro",
+   "n": 104,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0017fe10",
+   "cause": "otro",
+   "n": 158,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00180380",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 30
+  },
+  {
+   "addr": "0x00180450",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001804a0",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00180540",
+   "cause": "otro",
+   "n": 82,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00180ab0",
+   "cause": "otro",
+   "n": 144,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00181b50",
+   "cause": "otro",
+   "n": 65,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00181c60",
+   "cause": "otro",
+   "n": 225,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00182660",
+   "cause": "otro",
+   "n": 417,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00182cf0",
+   "cause": "otro",
+   "n": 86,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00182e50",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00182ed0",
+   "cause": "otro",
+   "n": 157,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00183620",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00183650",
+   "cause": "otro",
+   "n": 99,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00183ae0",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion passing 'void *' to parameter of type 's32' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00184340",
+   "cause": "otro",
+   "n": 136,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00184560",
+   "cause": "otro",
+   "n": 89,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001846d0",
+   "cause": "otro",
+   "n": 149,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "too few arguments to function call, expected 3, have 2"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00184a70",
+   "cause": "otro",
+   "n": 134,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "use of undeclared identifier 'sp124'"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00184c90",
+   "cause": "otro",
+   "n": 178,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00184f60",
+   "cause": "otro",
+   "n": 211,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001852b0",
+   "cause": "otro",
+   "n": 253,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00185d40",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion passing 'void *' to parameter of type 's32' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00185d80",
+   "cause": "otro",
+   "n": 113,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00185f50",
+   "cause": "otro",
+   "n": 93,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001860d0",
+   "cause": "otro",
+   "n": 112,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00186e30",
+   "cause": "otro",
+   "n": 734,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00188020",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001886e0",
+   "cause": "otro",
+   "n": 67,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00188860",
+   "cause": "tail_call_j",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001888a0",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00188960",
+   "cause": "otro",
+   "n": 31,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001889e0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001889f0",
+   "cause": "otro",
+   "n": 145,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00188c40",
+   "cause": "otro",
+   "n": 142,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00189fe0",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a590",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a5f0",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a640",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a710",
+   "cause": "tail_call_j",
+   "n": 9,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 36
+  },
+  {
+   "addr": "0x0018a740",
+   "cause": "tail_call_j",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a770",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a7a0",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018a810",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018ab10",
+   "cause": "otro",
+   "n": 39,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 29
+  },
+  {
+   "addr": "0x0018ac60",
+   "cause": "otro",
+   "n": 41,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 31
+  },
+  {
+   "addr": "0x0018ad10",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 28
+  },
+  {
+   "addr": "0x0018af70",
+   "cause": "otro",
+   "n": 62,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018b070",
+   "cause": "otro",
+   "n": 47,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018b7a0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 11
+  },
+  {
+   "addr": "0x0018b8e0",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018b940",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018ba00",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018ba60",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018bad0",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018bc00",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018bc60",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018bdd0",
+   "cause": "otro",
+   "n": 96,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018cd50",
+   "cause": "otro",
+   "n": 1352,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018e420",
+   "cause": "otro",
+   "n": 59,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018e960",
+   "cause": "otro",
+   "n": 866,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0018fe80",
+   "cause": "tail_call_j",
+   "n": 70,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00190740",
+   "cause": "movz_movn",
+   "n": 225,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 221
+  },
+  {
+   "addr": "0x00191090",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00191b20",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00192100",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00192a70",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00192ab0",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00193320",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00193930",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00193960",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00193990",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001942a0",
+   "cause": "otro",
+   "n": 37,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001944c0",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 27
+  },
+  {
+   "addr": "0x00194550",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00194640",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00194680",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00195030",
+   "cause": "otro",
+   "n": 151,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00195fd0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00197de0",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00197e40",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0019f7c0",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0019f7d0",
+   "cause": "otro",
+   "n": 170,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2d70",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2d80",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2d90",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2da0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2db0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a2dc0",
+   "cause": "otro",
+   "n": 122,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a3030",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a3040",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a3050",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a3060",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a3fb0",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a4df0",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a5500",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a5570",
+   "cause": "otro",
+   "n": 310,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a5a50",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a5aa0",
+   "cause": "otro",
+   "n": 587,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a63d0",
+   "cause": "otro",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a63f0",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a6410",
+   "cause": "otro",
+   "n": 112,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a6d30",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a70e0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a7200",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a74e0",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a8270",
+   "cause": "otro",
+   "n": 103,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a85c0",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a85d0",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a8600",
+   "cause": "otro",
+   "n": 60,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a8d10",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a90e0",
+   "cause": "otro",
+   "n": 270,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001a9c60",
+   "cause": "otro",
+   "n": 48,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 48
+  },
+  {
+   "addr": "0x001aa470",
+   "cause": "otro",
+   "n": 56,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001aa810",
+   "cause": "otro",
+   "n": 82,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ab610",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ad4d0",
+   "cause": "sin_optimizar",
+   "n": 5071,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b32c0",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b4230",
+   "cause": "otro",
+   "n": 29,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b4330",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b47c0",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b4950",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b49e0",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b4ae0",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b4fe0",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b5050",
+   "cause": "movz_movn",
+   "n": 110,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b5210",
+   "cause": "otro",
+   "n": 63,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b5490",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 11
+  },
+  {
+   "addr": "0x001b54e0",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b58c0",
+   "cause": "otro",
+   "n": 19,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b5c80",
+   "cause": "otro",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b5ca0",
+   "cause": "otro",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b62f0",
+   "cause": "otro",
+   "n": 92,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b7750",
+   "cause": "otro",
+   "n": 756,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b85c0",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b8630",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b8d30",
+   "cause": "vu0_cop2",
+   "n": 63,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b8e40",
+   "cause": "tail_call_j",
+   "n": 7,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 16
+  },
+  {
+   "addr": "0x001b8e60",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b8fc0",
+   "cause": "otro",
+   "n": 157,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9240",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9690",
+   "cause": "otro",
+   "n": 101,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9840",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b98d0",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9a00",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9aa0",
+   "cause": "otro",
+   "n": 87,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9c00",
+   "cause": "otro",
+   "n": 53,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001b9ea0",
+   "cause": "otro",
+   "n": 54,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "called object type 'M2C_UNK (**)(void *, M2C_UNK, u32)' (aka 'int (**)(void *, int, unsigned int)') is not a function or function pointer"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x001ba450",
+   "cause": "tail_call_j",
+   "n": 6,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 49
+  },
+  {
+   "addr": "0x001ba470",
+   "cause": "otro",
+   "n": 42,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ba8e0",
+   "cause": "otro",
+   "n": 78,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d2ef0",
+   "cause": "tail_call_j",
+   "n": 25,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d36f0",
+   "cause": "movz_movn",
+   "n": 343,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'u32' (aka 'unsigned int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 371
+  },
+  {
+   "addr": "0x001d5b50",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 12
+  },
+  {
+   "addr": "0x001d5bb0",
+   "cause": "limite_dudoso",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d5bbc",
+   "cause": "sin_jr_ra",
+   "n": 61,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d5cb0",
+   "cause": "limite_dudoso",
+   "n": 5,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d5cd0",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 1,
+   "m2c_compila": true,
+   "m2c_err1": []
+  },
+  {
+   "addr": "0x001d5f90",
+   "cause": "otro",
+   "n": 159,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6210",
+   "cause": "otro",
+   "n": 128,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6410",
+   "cause": "tail_call_j",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6430",
+   "cause": "otro",
+   "n": 108,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d65e0",
+   "cause": "sin_optimizar",
+   "n": 143,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6820",
+   "cause": "sin_optimizar",
+   "n": 143,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6a60",
+   "cause": "sin_optimizar",
+   "n": 122,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6c50",
+   "cause": "sin_optimizar",
+   "n": 126,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6e50",
+   "cause": "otro",
+   "n": 103,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d6ff0",
+   "cause": "otro",
+   "n": 107,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d71a0",
+   "cause": "sin_optimizar",
+   "n": 145,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d73f0",
+   "cause": "sin_optimizar",
+   "n": 145,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d7640",
+   "cause": "sin_optimizar",
+   "n": 123,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d7a30",
+   "cause": "otro",
+   "n": 103,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d7bd0",
+   "cause": "otro",
+   "n": 106,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001d7fa0",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 10
+  },
+  {
+   "addr": "0x001e0510",
+   "cause": "movz_movn",
+   "n": 302,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e09d0",
+   "cause": "mmi",
+   "n": 167,
+   "m2c": "ok",
+   "m2c_errors": 6,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "use of undeclared identifier 'saved_reg_gp'"
+   ]
+  },
+  {
+   "addr": "0x001e0c70",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e0cd0",
+   "cause": "otro",
+   "n": 3,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 2
+  },
+  {
+   "addr": "0x001e0ce0",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 22
+  },
+  {
+   "addr": "0x001e0d60",
+   "cause": "movz_movn",
+   "n": 23,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 20
+  },
+  {
+   "addr": "0x001e0dd0",
+   "cause": "mmi",
+   "n": 757,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e2580",
+   "cause": "otro",
+   "n": 1329,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e3a50",
+   "cause": "movz_movn",
+   "n": 78,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 80
+  },
+  {
+   "addr": "0x001e56b0",
+   "cause": "otro",
+   "n": 242,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e5c50",
+   "cause": "otro",
+   "n": 140,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e5e80",
+   "cause": "otro",
+   "n": 227,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e6210",
+   "cause": "otro",
+   "n": 140,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e6440",
+   "cause": "otro",
+   "n": 194,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e7280",
+   "cause": "otro",
+   "n": 39,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 33
+  },
+  {
+   "addr": "0x001e7320",
+   "cause": "movz_movn",
+   "n": 56,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 54
+  },
+  {
+   "addr": "0x001e7400",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e7a10",
+   "cause": "otro",
+   "n": 41,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion passing 's32 *' (aka 'int *') to parameter of type 's32' (aka 'int'); dereference with * [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x001e7e70",
+   "cause": "otro",
+   "n": 51,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e8200",
+   "cause": "mmi",
+   "n": 275,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e9a70",
+   "cause": "otro",
+   "n": 28,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 25
+  },
+  {
+   "addr": "0x001e9df0",
+   "cause": "vu0_cop2",
+   "n": 28,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e9e70",
+   "cause": "vu0_cop2",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001e9f00",
+   "cause": "vu0_cop2",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ea2c0",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ea490",
+   "cause": "otro",
+   "n": 58,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ea690",
+   "cause": "movz_movn",
+   "n": 18,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 17
+  },
+  {
+   "addr": "0x001ea760",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 33
+  },
+  {
+   "addr": "0x001eaae0",
+   "cause": "mmi",
+   "n": 96,
+   "m2c": "ok",
+   "m2c_errors": 5,
+   "m2c_compila": true,
+   "m2c_err1": []
+  },
+  {
+   "addr": "0x001eaf90",
+   "cause": "otro",
+   "n": 161,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 's32 *' (aka 'int *') from 'u32' (aka 'unsigned int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x001eb220",
+   "cause": "otro",
+   "n": 85,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001eb380",
+   "cause": "otro",
+   "n": 127,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001eca20",
+   "cause": "otro",
+   "n": 62,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ecb20",
+   "cause": "movz_movn",
+   "n": 58,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ee490",
+   "cause": "mmi",
+   "n": 127,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001eea80",
+   "cause": "mmi",
+   "n": 93,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001eec00",
+   "cause": "mmi",
+   "n": 214,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ef140",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 7
+  },
+  {
+   "addr": "0x001ef3f0",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ef450",
+   "cause": "mmi",
+   "n": 158,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ef6d0",
+   "cause": "mmi",
+   "n": 158,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001ef950",
+   "cause": "mmi",
+   "n": 188,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001eff60",
+   "cause": "mmi",
+   "n": 191,
+   "m2c": "ok",
+   "m2c_errors": 2,
+   "m2c_compila": true,
+   "m2c_err1": []
+  },
+  {
+   "addr": "0x001f0260",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f02d0",
+   "cause": "mmi",
+   "n": 167,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f0570",
+   "cause": "mmi",
+   "n": 167,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f0810",
+   "cause": "mmi",
+   "n": 199,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f0b30",
+   "cause": "mmi",
+   "n": 208,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f0e70",
+   "cause": "mmi",
+   "n": 202,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f11a0",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1210",
+   "cause": "tail_call_j",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1250",
+   "cause": "otro",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1260",
+   "cause": "otro",
+   "n": 266,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1690",
+   "cause": "mmi",
+   "n": 111,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1850",
+   "cause": "otro",
+   "n": 208,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 223
+  },
+  {
+   "addr": "0x001f1b90",
+   "cause": "mmi",
+   "n": 197,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f1eb0",
+   "cause": "mmi",
+   "n": 194,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x001f39e0",
+   "cause": "mmi",
+   "n": 75,
+   "m2c": "ok",
+   "m2c_errors": 4,
+   "m2c_compila": true,
+   "m2c_err1": []
+  },
+  {
+   "addr": "0x0020dde0",
+   "cause": "otro",
+   "n": 29,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('int' invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0020e190",
+   "cause": "movz_movn",
+   "n": 178,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0020ee30",
+   "cause": "otro",
+   "n": 46,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0020eef0",
+   "cause": "otro",
+   "n": 77,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0020ff50",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0020ff90",
+   "cause": "otro",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00210040",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00210050",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002105a0",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002105f0",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x00210640",
+   "cause": "tail_call_j",
+   "n": 55,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00210720",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00210750",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00210790",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002107d0",
+   "cause": "mmi",
+   "n": 751,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002113e0",
+   "cause": "movz_movn",
+   "n": 883,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002121b0",
+   "cause": "movz_movn",
+   "n": 283,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00212e50",
+   "cause": "movz_movn",
+   "n": 931,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021cf30",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021cf90",
+   "cause": "mmi",
+   "n": 85,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021d0f0",
+   "cause": "mmi",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021d430",
+   "cause": "otro",
+   "n": 39,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 5
+  },
+  {
+   "addr": "0x0021d4e0",
+   "cause": "mmi",
+   "n": 262,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021e2e0",
+   "cause": "otro",
+   "n": 81,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021e430",
+   "cause": "otro",
+   "n": 61,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021e650",
+   "cause": "movz_movn",
+   "n": 117,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 122
+  },
+  {
+   "addr": "0x0021e870",
+   "cause": "otro",
+   "n": 53,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0021e950",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 33
+  },
+  {
+   "addr": "0x0021f180",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 14
+  },
+  {
+   "addr": "0x0021f1d0",
+   "cause": "otro",
+   "n": 28,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 26
+  },
+  {
+   "addr": "0x0021f240",
+   "cause": "otro",
+   "n": 937,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002200f0",
+   "cause": "otro",
+   "n": 55,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00220470",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 8
+  },
+  {
+   "addr": "0x00221c90",
+   "cause": "otro",
+   "n": 99,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00222260",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002226e0",
+   "cause": "otro",
+   "n": 37,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00222c90",
+   "cause": "mmi",
+   "n": 91,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00222f80",
+   "cause": "otro",
+   "n": 116,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00224020",
+   "cause": "otro",
+   "n": 76,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002245b0",
+   "cause": "otro",
+   "n": 394,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00224cb0",
+   "cause": "otro",
+   "n": 87,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00224ff0",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002261f0",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00226570",
+   "cause": "otro",
+   "n": 74,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00226aa0",
+   "cause": "movz_movn",
+   "n": 322,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00227200",
+   "cause": "otro",
+   "n": 63,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00227590",
+   "cause": "otro",
+   "n": 130,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00228250",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00228b10",
+   "cause": "otro",
+   "n": 282,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00228f80",
+   "cause": "otro",
+   "n": 58,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002297a0",
+   "cause": "movz_movn",
+   "n": 517,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022a138",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "ok",
+   "m2c_errors": 4,
+   "m2c_compila": true,
+   "m2c_err1": []
+  },
+  {
+   "addr": "0x0022a9b0",
+   "cause": "otro",
+   "n": 537,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022b220",
+   "cause": "otro",
+   "n": 85,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022b380",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 7
+  },
+  {
+   "addr": "0x0022b560",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022b8a0",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022ba90",
+   "cause": "otro",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022bd00",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022dc00",
+   "cause": "otro",
+   "n": 120,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0022fb90",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 16
+  },
+  {
+   "addr": "0x00230bf0",
+   "cause": "otro",
+   "n": 47,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00230cb0",
+   "cause": "tail_call_j",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00230ce0",
+   "cause": "tail_call_j",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00230d10",
+   "cause": "tail_call_j",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00230dd0",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002313e0",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00231500",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 39
+  },
+  {
+   "addr": "0x002315a0",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 37
+  },
+  {
+   "addr": "0x00231dc0",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00232d20",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00232d90",
+   "cause": "otro",
+   "n": 287,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00233218",
+   "cause": "syscall",
+   "n": 43,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002332c8",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002332d0",
+   "cause": "syscall",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002332e0",
+   "cause": "tail_call_j",
+   "n": 36,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion assigning to 's128' (aka '__int128') from 'M2C_UNK *' (aka 'int *') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00233370",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00233380",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00233b40",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 32
+  },
+  {
+   "addr": "0x00233cb0",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00233d10",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00233d50",
+   "cause": "otro",
+   "n": 463,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00235450",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00235f50",
+   "cause": "otro",
+   "n": 92,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00236330",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00236490",
+   "cause": "otro",
+   "n": 143,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00236700",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 32
+  },
+  {
+   "addr": "0x00236970",
+   "cause": "otro",
+   "n": 35,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00236ce0",
+   "cause": "otro",
+   "n": 616,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00237680",
+   "cause": "otro",
+   "n": 172,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00237da0",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00237e40",
+   "cause": "otro",
+   "n": 89,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00237fb0",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "use of undeclared identifier 'saved_reg_gp'"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x00238350",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 9
+  },
+  {
+   "addr": "0x002385b0",
+   "cause": "otro",
+   "n": 66,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002386c0",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 30
+  },
+  {
+   "addr": "0x00238750",
+   "cause": "otro",
+   "n": 33,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 30
+  },
+  {
+   "addr": "0x002387e0",
+   "cause": "otro",
+   "n": 31,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 26
+  },
+  {
+   "addr": "0x00238860",
+   "cause": "otro",
+   "n": 31,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 26
+  },
+  {
+   "addr": "0x00238a20",
+   "cause": "otro",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00238b00",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00238e30",
+   "cause": "otro",
+   "n": 55,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00238f10",
+   "cause": "otro",
+   "n": 44,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00238fd0",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00239580",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00239940",
+   "cause": "otro",
+   "n": 38,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 's32' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 28
+  },
+  {
+   "addr": "0x00239a20",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x00239a80",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 'void *' from 'int' [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 3
+  },
+  {
+   "addr": "0x00239ad0",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 10
+  },
+  {
+   "addr": "0x00239b80",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a3d0",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a3e0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a3f0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a400",
+   "cause": "tail_call_j",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a420",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a430",
+   "cause": "otro",
+   "n": 21,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023a4e0",
+   "cause": "otro",
+   "n": 28,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023aa20",
+   "cause": "otro",
+   "n": 137,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023ac50",
+   "cause": "otro",
+   "n": 94,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023af90",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023b030",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 34
+  },
+  {
+   "addr": "0x0023b0e0",
+   "cause": "otro",
+   "n": 64,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 50
+  },
+  {
+   "addr": "0x0023b1e0",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023b7a0",
+   "cause": "otro",
+   "n": 256,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023bd90",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x0023bdd0",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 21
+  },
+  {
+   "addr": "0x0023bed0",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x0023bf10",
+   "cause": "otro",
+   "n": 26,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 21
+  },
+  {
+   "addr": "0x0023c4b0",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 's32 *' (aka 'int *') from 's32' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 13
+  },
+  {
+   "addr": "0x0023c510",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible integer to pointer conversion assigning to 's32 *' (aka 'int *') from 's32' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false,
+   "diff_lineas": 13
+  },
+  {
+   "addr": "0x0023c6f0",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 35
+  },
+  {
+   "addr": "0x0023c910",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023c970",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023c9d0",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023ca30",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023cb40",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023cba0",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023cc00",
+   "cause": "otro",
+   "n": 23,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023cc60",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023ccc0",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023cd20",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023cd80",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023ceb0",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023cf50",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023cfb0",
+   "cause": "otro",
+   "n": 27,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d4e0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d4f0",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d500",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d510",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d520",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d530",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d830",
+   "cause": "otro",
+   "n": 74,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023d960",
+   "cause": "otro",
+   "n": 47,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0023e0d0",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 16
+  },
+  {
+   "addr": "0x0023e130",
+   "cause": "otro",
+   "n": 48,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "incompatible pointer to integer conversion passing 's32 (*)(M2C_UNK)' (aka 'int (*)(int)') to parameter of type 'M2C_UNK' (aka 'int') [-Wint-conversion]"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0023e1f0",
+   "cause": "tail_call_j",
+   "n": 1,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00240740",
+   "cause": "otro",
+   "n": 48,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 51
+  },
+  {
+   "addr": "0x00240810",
+   "cause": "otro",
+   "n": 118,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00240f20",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00241800",
+   "cause": "movz_movn",
+   "n": 239,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00241bc0",
+   "cause": "otro",
+   "n": 141,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243130",
+   "cause": "otro",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243150",
+   "cause": "otro",
+   "n": 42,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243200",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243230",
+   "cause": "otro",
+   "n": 22,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243290",
+   "cause": "otro",
+   "n": 18,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00243b90",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00244800",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00244960",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00244cf0",
+   "cause": "otro",
+   "n": 80,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00244e40",
+   "cause": "tail_call_j",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00244e70",
+   "cause": "otro",
+   "n": 83,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00245460",
+   "cause": "otro",
+   "n": 39,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002457b0",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00245d00",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00246200",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00246460",
+   "cause": "otro",
+   "n": 66,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00247890",
+   "cause": "otro",
+   "n": 99,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00247f10",
+   "cause": "movz_movn",
+   "n": 66,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 31
+  },
+  {
+   "addr": "0x002480c0",
+   "cause": "otro",
+   "n": 120,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002482a0",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 14
+  },
+  {
+   "addr": "0x00248420",
+   "cause": "otro",
+   "n": 101,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00248640",
+   "cause": "otro",
+   "n": 8,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00249350",
+   "cause": "tail_call_j",
+   "n": 48,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002499a0",
+   "cause": "otro",
+   "n": 14,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024a130",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x0024a160",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024a190",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 165
+  },
+  {
+   "addr": "0x0024a1a0",
+   "cause": "sin_optimizar",
+   "n": 161,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024a440",
+   "cause": "otro",
+   "n": 169,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024a6f0",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 4
+  },
+  {
+   "addr": "0x0024a720",
+   "cause": "otro",
+   "n": 11,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024ad20",
+   "cause": "movz_movn",
+   "n": 33,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "indirection requires pointer operand ('s32' (aka 'int') invalid)"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0024afb0",
+   "cause": "otro",
+   "n": 154,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024b310",
+   "cause": "movz_movn",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024b370",
+   "cause": "otro",
+   "n": 10,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024b3a0",
+   "cause": "otro",
+   "n": 6,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024b3c0",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024b410",
+   "cause": "otro",
+   "n": 20,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024bc00",
+   "cause": "otro",
+   "n": 7,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024bc60",
+   "cause": "otro",
+   "n": 67,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024d210",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024e340",
+   "cause": "otro",
+   "n": 751,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024ef00",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024ef90",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024f360",
+   "cause": "otro",
+   "n": 40,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0024f400",
+   "cause": "otro",
+   "n": 37,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00250890",
+   "cause": "otro",
+   "n": 63,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00251620",
+   "cause": "otro",
+   "n": 16,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00251670",
+   "cause": "otro",
+   "n": 32,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 23
+  },
+  {
+   "addr": "0x00251c10",
+   "cause": "otro",
+   "n": 15,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00252870",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 41
+  },
+  {
+   "addr": "0x00252a90",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00255998",
+   "cause": "movz_movn",
+   "n": 66,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002567c0",
+   "cause": "otro",
+   "n": 66,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 63
+  },
+  {
+   "addr": "0x00257120",
+   "cause": "otro",
+   "n": 34,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00257a90",
+   "cause": "otro",
+   "n": 25,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00258d60",
+   "cause": "otro",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025b060",
+   "cause": "otro",
+   "n": 200,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": false,
+   "m2c_err1": [
+    "unknown type name 'M2C_UNK32'; did you mean 'M2C_UNK'?"
+   ],
+   "intento_c": true,
+   "intento_compila": false
+  },
+  {
+   "addr": "0x0025b380",
+   "cause": "otro",
+   "n": 71,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025b4a0",
+   "cause": "otro",
+   "n": 70,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025b5c0",
+   "cause": "otro",
+   "n": 64,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025b6c0",
+   "cause": "otro",
+   "n": 158,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025b990",
+   "cause": "otro",
+   "n": 17,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025c440",
+   "cause": "otro",
+   "n": 293,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025cd40",
+   "cause": "otro",
+   "n": 64,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025ce40",
+   "cause": "tail_call_j",
+   "n": 3,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025ce50",
+   "cause": "otro",
+   "n": 58,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025dcf0",
+   "cause": "sin_optimizar",
+   "n": 225,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025e080",
+   "cause": "otro",
+   "n": 30,
+   "m2c": "ok",
+   "m2c_errors": 0,
+   "m2c_compila": true,
+   "m2c_err1": [],
+   "intento_c": true,
+   "intento_compila": true,
+   "diff_lineas": 26
+  },
+  {
+   "addr": "0x0025e500",
+   "cause": "tail_call_j",
+   "n": 24,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025f6d0",
+   "cause": "tail_call_j",
+   "n": 2,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025f710",
+   "cause": "tail_call_j",
+   "n": 4,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x0025f720",
+   "cause": "otro",
+   "n": 937,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00260600",
+   "cause": "otro",
+   "n": 533,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00260e60",
+   "cause": "otro",
+   "n": 36,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x00260fe0",
+   "cause": "otro",
+   "n": 13,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002db44c",
+   "cause": "limite_dudoso",
+   "n": 12,
+   "m2c": "sin_borrador"
+  },
+  {
+   "addr": "0x002db888",
+   "cause": "otro",
+   "n": 9,
+   "m2c": "sin_borrador"
+  }
+ ]
+}

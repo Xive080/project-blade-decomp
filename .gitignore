@@ -43,3 +43,6 @@ SCES_502.46
 # Datos del juego y herramientas de terceros: no versionar
 SYSTEM.CNF
 third_party/
+
+# derivado mecanicamente del ELF del usuario (ab2c.py): se regenera en la build desde AIRBLADE_ELF
+port/m1/ported/

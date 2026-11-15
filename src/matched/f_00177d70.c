@@ -1,0 +1,34 @@
+extern void *ext0(void);
+extern int ext1(void *, void *, void *, void *);
+extern int ext2(void *, int);
+extern int ext3(void);
+extern int ext4(void *, int);
+struct S { float f[11]; };
+struct T { void *p[10]; };
+extern struct S D308410;
+extern char H0[], H1[], H2[], H3[], H4[], H5[], H6[], H7[], H8[], H9[];
+extern char M0[], M1[];
+extern int flag;
+int f(void) {
+    struct S *s;
+    struct T *t;
+    int r;
+    void *a1, *a2, *a3, *a4, *a5;
+    t = ext0();
+    if (t == 0) return 0;
+    s = (struct S *)t;
+    D308410 = *s;
+    t->p[1] = H1;
+    a2 = H2; t->p[2] = a2;
+    a3 = H3; t->p[3] = a3;
+    a4 = H4; t->p[4] = a4;
+    a5 = H5; t->p[5] = a5;
+    t->p[6] = H6; t->p[7] = H7; t->p[8] = H8; t->p[9] = H9;
+    t->p[0] = H0;
+    flag = 1;
+    r = ext1(a5, a4, a3, a2);
+    if (r) ext2(M0, r);
+    r = ext3();
+    if (r) ext4(M1, r);
+    return 1;
+}
